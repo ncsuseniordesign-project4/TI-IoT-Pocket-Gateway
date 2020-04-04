@@ -1839,6 +1839,33 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-83.82" y="6.096" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="-83.82" y="1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="R4" library="resistor-power" library_urn="urn:adsk.eagle:library:344" package="AC01" package3d_urn="urn:adsk.eagle:package:25124/1" value="" x="-74.93" y="-6.35" smashed="yes">
+<attribute name="MF" value="" x="-74.93" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-74.93" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-80.645" y="-3.81" size="1.778" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-74.93" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-74.93" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="-74.93" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-79.375" y="-6.985" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="R5" library="resistor-power" library_urn="urn:adsk.eagle:library:344" package="AC01" package3d_urn="urn:adsk.eagle:package:25124/1" value="" x="-74.93" y="-13.97" smashed="yes">
+<attribute name="MF" value="" x="-74.93" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-74.93" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-80.645" y="-11.43" size="1.778" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-74.93" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-74.93" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="-74.93" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-79.375" y="-14.605" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="R6" library="resistor-power" library_urn="urn:adsk.eagle:library:344" package="AC01" package3d_urn="urn:adsk.eagle:package:25124/1" value="" x="-74.93" y="-21.59" smashed="yes">
+<attribute name="MF" value="" x="-74.93" y="-21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-74.93" y="-21.59" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-80.645" y="-19.05" size="1.778" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-74.93" y="-21.59" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-74.93" y="-21.59" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="-74.93" y="-21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-79.375" y="-22.225" size="1.778" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="VBAT">
@@ -1860,13 +1887,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="VDD_EXT">
 <contactref element="U1" pad="15"/>
-</signal>
-<signal name="5V_IN">
-<contactref element="C1" pad="1"/>
-<contactref element="IC1" pad="2"/>
-<contactref element="C4" pad="1"/>
-<wire x1="-26.67" y1="57.15" x2="-16.51" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.0218" y1="33.5788" x2="-26.67" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R1" pad="1"/>
@@ -1962,6 +1982,28 @@ design rules under a new name.</description>
 <contactref element="U1" pad="31"/>
 <contactref element="J1" pad="C7"/>
 <wire x1="-21.67" y1="4.51" x2="-69.525" y2="9.105" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="D1" pad="K"/>
+<contactref element="R4" pad="1"/>
+<wire x1="-72.39" y1="3.81" x2="-83.83" y2="-6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="D2" pad="K"/>
+<contactref element="R5" pad="1"/>
+<wire x1="-77.47" y1="3.81" x2="-83.83" y2="-13.97" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="D3" pad="K"/>
+<contactref element="R6" pad="1"/>
+<wire x1="-82.55" y1="3.81" x2="-83.83" y2="-21.59" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+5V">
+<contactref element="C1" pad="1"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="C4" pad="1"/>
+<wire x1="-26.67" y1="57.15" x2="-16.51" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.0218" y1="33.5788" x2="-26.67" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
