@@ -1,0 +1,14 @@
+[Unit]
+Description=SIM7000A Connection Service
+# wait for the device to become available before we run
+BindsTo=sys-subsystem-net-devices-wwan0.device
+After=sys-subsystem-net-devices-wwan0.device
+Wants=network.target
+
+[Service]
+ExecStart=/sbin/udhcpc -f -i wwan0
+ExecStartPre=/usr/local/bin/sim7000A-qmi-start
+ExecStopPost=/usr/local/bin/sim7000A-qmi-stop
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ip link set dev wwan0 down
+qmi-network /dev/cdc-wdm0 stop
