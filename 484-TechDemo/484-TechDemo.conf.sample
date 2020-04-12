@@ -1,0 +1,15 @@
+// 484-TechDemo configuration file.
+// This file must be in JSON format.
+// Usage:
+// Add IoT device primary key as the "secretKey" value.
+// Adjust the "readDelay" value if needed.
+// Save file to "/etc/484-TechDemo.conf".
+//
+{
+    // Personal Azure IoT Device primary key
+    "secretKey": "[your-iot-device-primary-key-here]",
+    // Delay between program loop iterations in milliseconds
+    // This controls the number of messages sent per second.
+    // Ex: A readDelay of 1000ms will send 1 message per second.
+    "readDelay": 1000
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ti-iot-pocket-gateway-484-demo",
+  "version": "1.0.0",
+  "description": "ECE 484 Tech Demo - TechLab Accelerometer Data Collection",
+  "main": "484-TechDemo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway.git"
+  },
+  "author": "ncsuseniordesign-project4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway/issues"
+  },
+  "homepage": "https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway#readme",
+  "dependencies": {
+    "azure-iot-device": "^1.13.0",
+    "azure-iot-device-mqtt": "^1.12.0"
+  }
+}
