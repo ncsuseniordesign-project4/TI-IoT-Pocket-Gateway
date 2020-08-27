@@ -10175,6 +10175,181 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </deviceset>
 </devicesets>
 </library>
+<library name="PCA9306">
+<packages>
+<package name="DQE8">
+<smd name="1" x="-0.208" y="0.525" dx="0.784" dy="0.2" layer="1" cream="no"/>
+<smd name="2" x="-0.335" y="0.175" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="3" x="-0.335" y="-0.175" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="4" x="-0.335" y="-0.525" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="5" x="0.335" y="-0.525" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="6" x="0.335" y="-0.175" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="7" x="0.335" y="0.175" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="0.335" y="0.525" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="0.61"/>
+<vertex x="-0.585" y="0.44"/>
+<vertex x="-0.085" y="0.44"/>
+<vertex x="-0.085" y="0.61"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="0.26"/>
+<vertex x="-0.585" y="0.09"/>
+<vertex x="-0.085" y="0.09"/>
+<vertex x="-0.085" y="0.26"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="-0.09"/>
+<vertex x="-0.585" y="-0.26"/>
+<vertex x="-0.085" y="-0.26"/>
+<vertex x="-0.085" y="-0.09"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="-0.44"/>
+<vertex x="-0.585" y="-0.61"/>
+<vertex x="-0.085" y="-0.61"/>
+<vertex x="-0.085" y="-0.44"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="-0.44"/>
+<vertex x="0.085" y="-0.61"/>
+<vertex x="0.585" y="-0.61"/>
+<vertex x="0.585" y="-0.44"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="-0.09"/>
+<vertex x="0.085" y="-0.26"/>
+<vertex x="0.585" y="-0.26"/>
+<vertex x="0.585" y="-0.09"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="0.26"/>
+<vertex x="0.085" y="0.09"/>
+<vertex x="0.585" y="0.09"/>
+<vertex x="0.585" y="0.26"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="0.61"/>
+<vertex x="0.085" y="0.44"/>
+<vertex x="0.585" y="0.44"/>
+<vertex x="0.585" y="0.61"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="0.675"/>
+<vertex x="-0.65" y="0.375"/>
+<vertex x="-0.02" y="0.375"/>
+<vertex x="-0.02" y="0.675"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="0.325"/>
+<vertex x="-0.65" y="0.025"/>
+<vertex x="-0.02" y="0.025"/>
+<vertex x="-0.02" y="0.325"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="-0.025"/>
+<vertex x="-0.65" y="-0.325"/>
+<vertex x="-0.02" y="-0.325"/>
+<vertex x="-0.02" y="-0.025"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="-0.375"/>
+<vertex x="-0.65" y="-0.675"/>
+<vertex x="-0.02" y="-0.675"/>
+<vertex x="-0.02" y="-0.375"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="-0.375"/>
+<vertex x="0.02" y="-0.675"/>
+<vertex x="0.65" y="-0.675"/>
+<vertex x="0.65" y="-0.375"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="-0.025"/>
+<vertex x="0.02" y="-0.325"/>
+<vertex x="0.65" y="-0.325"/>
+<vertex x="0.65" y="-0.025"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="0.325"/>
+<vertex x="0.02" y="0.025"/>
+<vertex x="0.65" y="0.025"/>
+<vertex x="0.65" y="0.325"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="0.675"/>
+<vertex x="0.02" y="0.375"/>
+<vertex x="0.65" y="0.375"/>
+<vertex x="0.65" y="0.675"/>
+</polygon>
+<wire x1="-0.762" y1="-0.9652" x2="0.762" y2="-0.9652" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.9652" x2="-0.762" y2="0.9652" width="0.1524" layer="21"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-0.508" y1="-0.7112" x2="0.508" y2="-0.7112" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="-0.7112" x2="0.508" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="0.7112" x2="-0.3048" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.7112" x2="-0.508" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.508" y1="0.7112" x2="-0.508" y2="-0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.8128" y1="0.5334" x2="-0.9652" y2="0.5334" width="0" layer="51" curve="-180"/>
+<wire x1="-0.9652" y1="0.5334" x2="-0.8128" y2="0.5334" width="0" layer="51" curve="-180"/>
+<wire x1="0.3048" y1="0.7366" x2="-0.3048" y2="0.7112" width="0.1524" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PCA9306_DQE_8">
+<pin name="GND" x="2.54" y="0" length="middle" direction="pwr"/>
+<pin name="VREF1" x="2.54" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SCL1" x="2.54" y="-5.08" length="middle" direction="pas"/>
+<pin name="SDA1" x="2.54" y="-7.62" length="middle" direction="pas"/>
+<pin name="SDA2" x="63.5" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SCL2" x="63.5" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VREF2" x="63.5" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="EN" x="63.5" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="58.42" y1="-12.7" x2="58.42" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="28.2956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="27.6606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCA9306DQER" prefix="U">
+<gates>
+<gate name="A" symbol="PCA9306_DQE_8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DQE8">
+<connects>
+<connect gate="A" pin="EN" pad="8"/>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="SCL1" pad="3"/>
+<connect gate="A" pin="SCL2" pad="6"/>
+<connect gate="A" pin="SDA1" pad="4"/>
+<connect gate="A" pin="SDA2" pad="5"/>
+<connect gate="A" pin="VREF1" pad="2"/>
+<connect gate="A" pin="VREF2" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET_URL" value="http://www.ti.com/lit/gpn/PCA9306" constant="no"/>
+<attribute name="DESCRIPTION" value="Dual Bi-Directional I2C-Bus and SMBus Voltage Level-Translator" constant="no"/>
+<attribute name="FAMILY_NAME" value="I2C SPECIAL FUNCTION" constant="no"/>
+<attribute name="GENERIC_PART_NUMBER" value="PCA9306" constant="no"/>
+<attribute name="INDUSTRY_STD_PKG_TYPE" value="X2SON" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PCA9306DQER" constant="no"/>
+<attribute name="PACKAGE_DESIGNATOR" value="DQE" constant="no"/>
+<attribute name="PIN_COUNT" value="8" constant="no"/>
+<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10187,10 +10362,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <groups>
 <schematic_group name="POWER"/>
 <schematic_group name="USER_IO"/>
-<schematic_group name="GROVE"/>
 <schematic_group name="POCKETBEAGLE_INTERFACE"/>
-<schematic_group name="MODEM"/>
 <schematic_group name="USB"/>
+<schematic_group name="GROVE"/>
 </groups>
 <parts>
 <part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1"/>
@@ -10226,9 +10400,7 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
-<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -10244,9 +10416,7 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="X_17" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="BRD1" library="e14_BeagleBoard_PocketBeagle_v1_alpha1" deviceset="POCKETBEAGLE_?_2" device="BRD"/>
 <part name="J4[GROVE]" library="640456-4" deviceset="640456-4" device=""/>
-<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_22" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -10266,22 +10436,23 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:8360/1"/>
 <part name="U2" library="TUSB2046B" deviceset="TUSB2046BIRHBR" device=""/>
 <part name="U$1" library="Personal" deviceset="MSQA6V1W5T2G" device=""/>
+<part name="U3" library="PCA9306" deviceset="PCA9306DQER" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="40.64" y="-7.62" smashed="yes" grouprefs="MODEM">
+<instance part="U1" gate="G$1" x="40.64" y="-7.62" smashed="yes">
 <attribute name="NAME" x="20.2966" y="26.7095" size="1.78005" layer="95"/>
 <attribute name="VALUE" x="20.2956" y="-40.6796" size="1.78013125" layer="96"/>
 </instance>
-<instance part="X_8" gate="G$1" x="68.58" y="-40.64" smashed="yes" rot="MR0" grouprefs="MODEM"/>
-<instance part="J1[SIMCARD]" gate="G$1" x="114.3" y="12.7" smashed="yes" grouprefs="MODEM">
+<instance part="X_8" gate="G$1" x="68.58" y="-40.64" smashed="yes" rot="MR0"/>
+<instance part="J1[SIMCARD]" gate="G$1" x="114.3" y="12.7" smashed="yes">
 <attribute name="NAME" x="107.1786" y="23.3776" size="1.780359375" layer="95"/>
 <attribute name="VALUE" x="106.90353125" y="-2.084" size="1.78643125" layer="96"/>
 </instance>
-<instance part="X_9" gate="G$1" x="132.08" y="0" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="X_9" gate="G$1" x="132.08" y="0" smashed="yes" rot="MR0"/>
 <instance part="J2" gate="G$1" x="139.7" y="86.36" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="132.068909375" y="95.008559375" size="1.27185" layer="95"/>
 <attribute name="VALUE" x="132.067040625" y="73.6384" size="1.272159375" layer="96"/>
@@ -10290,14 +10461,14 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="P+2" gate="1" x="114.3" y="99.06" smashed="yes" grouprefs="USB">
 <attribute name="VALUE" x="111.76" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+7" gate="1" x="-15.24" y="17.78" smashed="yes" grouprefs="MODEM">
+<instance part="P+7" gate="1" x="-15.24" y="17.78" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C6" gate="G$1" x="137.16" y="25.4" smashed="yes" grouprefs="MODEM">
+<instance part="C6" gate="G$1" x="137.16" y="25.4" smashed="yes">
 <attribute name="NAME" x="138.684" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="138.684" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="X_17" gate="G$1" x="137.16" y="20.32" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="X_17" gate="G$1" x="137.16" y="20.32" smashed="yes" rot="MR0"/>
 <instance part="BRD1" gate="G$1" x="63.5" y="-124.46" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_INTERFACE">
 <attribute name="NAME" x="-15.24" y="-111.76" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="-12.7" y="-111.76" size="1.778" layer="96" rot="R90" align="center-left"/>
@@ -10314,7 +10485,11 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <attribute name="NAME" x="30.8356" y="110.7186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="30.2006" y="108.1786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U$1" gate="G$1" x="109.22" y="-35.56" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="U$1" gate="G$1" x="109.22" y="-35.56" smashed="yes" rot="MR0"/>
+<instance part="U3" gate="A" x="-55.88" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-27.5844" y="1.4986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="-28.2194" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10322,15 +10497,15 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="VBAT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
-<wire x1="66.04" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="68.58" y="22.86" size="1.778" layer="95" xref="yes" grouprefs="MODEM"/>
+<wire x1="66.04" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
+<label x="68.58" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="0" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="GND"/>
-<wire x1="127" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="2.54" x2="132.08" y2="0" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="127" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="2.54" x2="132.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -10345,9 +10520,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="66.04" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="X_8" gate="G$1" pin="0"/>
-<wire x1="68.58" y1="-40.64" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="68.58" y1="-40.64" x2="68.58" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <wire x1="83.82" y1="-25.4" x2="76.2" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-25.4" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
@@ -10358,15 +10533,15 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_VDD"/>
-<wire x1="66.04" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="83.82" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="91.44" y1="17.78" x2="91.44" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="91.44" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="27.94" x2="132.08" y2="20.32" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="17.78" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="VCC"/>
-<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<junction x="132.08" y="27.94" grouprefs="MODEM"/>
+<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
+<junction x="132.08" y="27.94"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="17.78" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="83.82" y="17.78"/>
@@ -10378,12 +10553,12 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_DATA"/>
-<wire x1="66.04" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="101.6" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="119.38" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="142.24" y1="-5.08" x2="142.24" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="142.24" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-5.08" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="I/O"/>
 <wire x1="119.38" y1="-5.08" x2="119.38" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="119.38" y="-5.08"/>
@@ -10399,10 +10574,10 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="7.62" x2="-15.24" y2="15.24" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="U1" gate="G$1" pin="USB_VBUS"/>
-<wire x1="15.24" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="15.24" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="WIFI_D-" class="0">
@@ -10422,44 +10597,46 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="MODEM_D+" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DP"/>
-<wire x1="15.24" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="5.08" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<label x="10.16" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MODEM_D-" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DM"/>
-<wire x1="15.24" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="2.54" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91"/>
+<label x="10.16" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART_TXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
-<wire x1="15.24" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="7.62" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="91"/>
+<label x="12.7" y="-12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U3" gate="A" pin="SCL2"/>
 </segment>
 </net>
 <net name="UART_RXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
-<wire x1="15.24" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="7.62" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="91"/>
+<label x="12.7" y="-15.24" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="U3" gate="A" pin="SDA2"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!NRESET"/>
-<wire x1="15.24" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="10.16" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="10.16" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="RST"/>
 <pinref part="U1" gate="G$1" pin="SIM_CLK"/>
-<wire x1="66.04" y1="12.7" x2="81.28" y2="12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="81.28" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="12.7" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="12.7" x2="81.28" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="81.28" y="12.7"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
@@ -10470,9 +10647,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="CLK"/>
 <pinref part="U1" gate="G$1" pin="SIM_RST"/>
-<wire x1="101.6" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="101.6" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
-<wire x1="78.74" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="78.74" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="10.16" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-33.02" x2="83.82" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="78.74" y="10.16"/>
@@ -10482,76 +10659,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </sheet>
 <sheet>
 <plain>
-<attribute name="NAME" x="14.224" y="71.501" size="1.778" layer="95"/>
-<attribute name="VALUE" x="14.224" y="66.421" size="1.778" layer="96"/>
-<attribute name="NAME" x="110.744" y="71.501" size="1.778" layer="95"/>
-<attribute name="VALUE" x="110.744" y="66.421" size="1.778" layer="96"/>
-<attribute name="NAME" x="21.336" y="71.755" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.336" y="66.929" size="1.778" layer="96"/>
-<attribute name="NAME" x="122.936" y="71.755" size="1.778" layer="95"/>
-<attribute name="VALUE" x="122.936" y="66.929" size="1.778" layer="96"/>
-<attribute name="VALUE" x="-5.08" y="73.66" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="77.216" y="53.34" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="80.264" y="53.34" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="77.216" y="68.58" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="80.264" y="68.58" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="92.456" y="68.58" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="95.504" y="68.58" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-67.691" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="-73.025" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
-<attribute name="NAME" x="-57.531" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="-62.865" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
-<attribute name="NAME" x="-47.371" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="-52.705" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
-<attribute name="NAME" x="-52.324" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-49.276" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-62.484" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-59.436" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-72.644" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-69.596" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-85.344" y="17.78" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-82.296" y="17.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-85.344" y="-5.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-82.296" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-86.36" y="3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-74.93" y="6.35" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="-86.36" y="20.32" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="-59.944" y="17.78" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-56.896" y="17.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-59.944" y="-5.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-56.896" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-60.96" y="3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-49.53" y="6.35" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="-60.96" y="20.32" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="-37.084" y="17.78" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-34.036" y="17.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-37.084" y="-5.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-34.036" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="-38.1" y="3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-26.67" y="6.35" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="-38.1" y="20.32" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="136.66" y="40.64" size="1.778" layer="95"/>
-<attribute name="VALUE" x="137.16" y="25.4" size="1.778" layer="96"/>
-<attribute name="NAME" x="122.936" y="40.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="125.984" y="40.64" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="VALUE" x="121.92" y="43.18" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="112.776" y="38.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="115.824" y="38.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="VALUE" x="111.76" y="40.64" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="129.54" y="45.72" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="142.621" y="44.196" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="137.541" y="51.816" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="136.66" y="12.7" size="1.778" layer="95"/>
-<attribute name="VALUE" x="137.16" y="-2.54" size="1.778" layer="96"/>
-<attribute name="NAME" x="122.936" y="12.7" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="125.984" y="12.7" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="VALUE" x="121.92" y="15.24" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="112.776" y="10.16" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="115.824" y="10.16" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="VALUE" x="111.76" y="12.7" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="129.54" y="17.78" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="142.621" y="16.256" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="137.541" y="23.876" size="1.778" layer="96" rot="R270"/>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="17.78" y="30.48" smashed="yes" grouprefs="POWER"/>
@@ -10570,9 +10677,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="R4" gate="G$1" x="83.82" y="12.7" smashed="yes" rot="R90" grouprefs="POWER"/>
 <instance part="R5" gate="G$1" x="83.82" y="27.94" smashed="yes" rot="R90" grouprefs="POWER"/>
 <instance part="R6" gate="G$1" x="99.06" y="27.94" smashed="yes" rot="R90" grouprefs="POWER"/>
-<instance part="D1" gate="G$1" x="88.9" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
-<instance part="D2" gate="G$1" x="99.06" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
-<instance part="D3" gate="G$1" x="109.22" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
+<instance part="D1" gate="G$1" x="88.9" y="78.74" smashed="yes" grouprefs="USER_IO"/>
+<instance part="D2" gate="G$1" x="99.06" y="78.74" smashed="yes" grouprefs="USER_IO"/>
+<instance part="D3" gate="G$1" x="109.22" y="78.74" smashed="yes" grouprefs="USER_IO"/>
 <instance part="X_10" gate="G$1" x="109.22" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
 <instance part="X_11" gate="G$1" x="99.06" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
 <instance part="X_12" gate="G$1" x="88.9" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
@@ -10595,18 +10702,14 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="SW3" gate="G$1" x="55.88" y="86.36" smashed="yes" rot="R90" grouprefs="USER_IO"/>
 <instance part="P+12" gate="1" x="55.88" y="104.14" smashed="yes" grouprefs="USER_IO"/>
 <instance part="J3[GROVE]" gate="G$1" x="149.86" y="86.36" smashed="yes" grouprefs="GROVE"/>
-<instance part="R7" gate="G$1" x="132.08" y="93.98" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+3" gate="1" x="132.08" y="101.6" smashed="yes" grouprefs="GROVE"/>
-<instance part="R8" gate="G$1" x="121.92" y="91.44" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+4" gate="1" x="121.92" y="99.06" smashed="yes" grouprefs="GROVE"/>
 <instance part="X_14" gate="G$1" x="139.7" y="81.28" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="P+5" gate="1" x="139.7" y="104.14" smashed="yes" grouprefs="GROVE"/>
 <instance part="C2" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_15" gate="G$1" x="152.4" y="99.06" smashed="yes" rot="MR270" grouprefs="GROVE"/>
 <instance part="J4[GROVE]" gate="G$1" x="149.86" y="58.42" smashed="yes" grouprefs="GROVE"/>
-<instance part="R11" gate="G$1" x="132.08" y="66.04" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+8" gate="1" x="132.08" y="73.66" smashed="yes" grouprefs="GROVE"/>
-<instance part="R12" gate="G$1" x="121.92" y="63.5" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+9" gate="1" x="121.92" y="71.12" smashed="yes" grouprefs="GROVE"/>
 <instance part="X_22" gate="G$1" x="139.7" y="53.34" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="P+10" gate="1" x="139.7" y="76.2" smashed="yes" grouprefs="GROVE"/>
@@ -10685,21 +10788,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="X_12" gate="G$1" pin="0"/>
-<wire x1="88.9" y1="73.66" x2="88.9" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
-</segment>
-<segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="X_11" gate="G$1" pin="0"/>
-<wire x1="99.06" y1="73.66" x2="99.06" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="X_10" gate="G$1" pin="0"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="X_16" gate="G$1" pin="0"/>
 </segment>
@@ -10729,6 +10817,21 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="X_23" gate="G$1" pin="0"/>
 </segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="X_12" gate="G$1" pin="0"/>
+<wire x1="88.9" y1="73.66" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_11" gate="G$1" pin="0"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="99.06" y1="73.66" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_10" gate="G$1" pin="0"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -10756,14 +10859,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="91.44" x2="139.7" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="139.7" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
@@ -10771,14 +10866,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <junction x="139.7" y="99.06" grouprefs="GROVE"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="P+8" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="1"/>
@@ -10789,23 +10876,29 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+10" gate="1" pin="+5V"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
-</net>
-<net name="N$7" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="J3[GROVE]" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="121.92" y1="96.52" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
-</net>
-<net name="N$5" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="J3[GROVE]" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="132.08" y1="99.06" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="121.92" y1="58.42" x2="121.92" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
+</segment>
+<segment>
+<pinref part="J4[GROVE]" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
+<wire x1="132.08" y1="60.96" x2="132.08" y2="71.12" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
@@ -10847,13 +10940,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <label x="109.22" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="USER_IO"/>
 </segment>
 </net>
-<net name="GPIO_2" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="91.44" x2="99.06" y2="93.98" width="0.1524" layer="91" grouprefs="USER_IO"/>
-<label x="99.06" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="USER_IO"/>
-</segment>
-</net>
 <net name="GPIO_1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -10873,32 +10959,28 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="J3[GROVE]" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="N$5" class="0">
 <segment>
-<pinref part="J3[GROVE]" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="2"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91" grouprefs="GROVE"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

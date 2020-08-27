@@ -10226,7 +10226,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
+<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -10242,7 +10244,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="X_17" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="BRD1" library="e14_BeagleBoard_PocketBeagle_v1_alpha1" deviceset="POCKETBEAGLE_?_2" device="BRD"/>
 <part name="J4[GROVE]" library="640456-4" deviceset="640456-4" device=""/>
+<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_22" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -10496,9 +10500,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="R4" gate="G$1" x="83.82" y="12.7" smashed="yes" rot="R90" grouprefs="POWER"/>
 <instance part="R5" gate="G$1" x="83.82" y="27.94" smashed="yes" rot="R90" grouprefs="POWER"/>
 <instance part="R6" gate="G$1" x="99.06" y="27.94" smashed="yes" rot="R90" grouprefs="POWER"/>
-<instance part="D1" gate="G$1" x="88.9" y="78.74" smashed="yes" grouprefs="USER_IO"/>
-<instance part="D2" gate="G$1" x="99.06" y="78.74" smashed="yes" grouprefs="USER_IO"/>
-<instance part="D3" gate="G$1" x="109.22" y="78.74" smashed="yes" grouprefs="USER_IO"/>
+<instance part="D1" gate="G$1" x="88.9" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
+<instance part="D2" gate="G$1" x="99.06" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
+<instance part="D3" gate="G$1" x="109.22" y="76.2" smashed="yes" rot="R180" grouprefs="USER_IO"/>
 <instance part="X_10" gate="G$1" x="109.22" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
 <instance part="X_11" gate="G$1" x="99.06" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
 <instance part="X_12" gate="G$1" x="88.9" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
@@ -10521,14 +10525,18 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="SW3" gate="G$1" x="55.88" y="86.36" smashed="yes" rot="R90" grouprefs="USER_IO"/>
 <instance part="P+12" gate="1" x="55.88" y="104.14" smashed="yes" grouprefs="USER_IO"/>
 <instance part="J3[GROVE]" gate="G$1" x="149.86" y="86.36" smashed="yes" grouprefs="GROVE"/>
+<instance part="R7" gate="G$1" x="132.08" y="93.98" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+3" gate="1" x="132.08" y="101.6" smashed="yes" grouprefs="GROVE"/>
+<instance part="R8" gate="G$1" x="121.92" y="91.44" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+4" gate="1" x="121.92" y="99.06" smashed="yes" grouprefs="GROVE"/>
 <instance part="X_14" gate="G$1" x="139.7" y="81.28" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="P+5" gate="1" x="139.7" y="104.14" smashed="yes" grouprefs="GROVE"/>
 <instance part="C2" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_15" gate="G$1" x="152.4" y="99.06" smashed="yes" rot="MR270" grouprefs="GROVE"/>
 <instance part="J4[GROVE]" gate="G$1" x="149.86" y="58.42" smashed="yes" grouprefs="GROVE"/>
+<instance part="R11" gate="G$1" x="132.08" y="66.04" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+8" gate="1" x="132.08" y="73.66" smashed="yes" grouprefs="GROVE"/>
+<instance part="R12" gate="G$1" x="121.92" y="63.5" smashed="yes" rot="R90" grouprefs="GROVE"/>
 <instance part="P+9" gate="1" x="121.92" y="71.12" smashed="yes" grouprefs="GROVE"/>
 <instance part="X_22" gate="G$1" x="139.7" y="53.34" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="P+10" gate="1" x="139.7" y="76.2" smashed="yes" grouprefs="GROVE"/>
@@ -10607,6 +10615,21 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="X_12" gate="G$1" pin="0"/>
+<wire x1="88.9" y1="73.66" x2="88.9" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="X_11" gate="G$1" pin="0"/>
+<wire x1="99.06" y1="73.66" x2="99.06" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
+</segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="X_10" gate="G$1" pin="0"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="68.58" width="0.1524" layer="91" grouprefs="USER_IO"/>
+</segment>
+<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="X_16" gate="G$1" pin="0"/>
 </segment>
@@ -10636,21 +10659,6 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="X_23" gate="G$1" pin="0"/>
 </segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="X_12" gate="G$1" pin="0"/>
-<wire x1="88.9" y1="73.66" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X_11" gate="G$1" pin="0"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="99.06" y1="73.66" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X_10" gate="G$1" pin="0"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -10678,6 +10686,14 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
+<segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="91.44" x2="139.7" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="139.7" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
@@ -10685,6 +10701,14 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <junction x="139.7" y="99.06" grouprefs="GROVE"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="1"/>
@@ -10695,29 +10719,23 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+10" gate="1" pin="+5V"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
+</net>
+<net name="N$7" class="0">
 <segment>
-<pinref part="J3[GROVE]" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="121.92" y1="96.52" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
+</net>
+<net name="N$5" class="0">
 <segment>
-<pinref part="J3[GROVE]" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="132.08" y1="99.06" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
+</net>
+<net name="N$8" class="0">
 <segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="121.92" y1="58.42" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91" grouprefs="GROVE"/>
-<pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="132.08" y1="60.96" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
@@ -10759,6 +10777,13 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <label x="109.22" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="USER_IO"/>
 </segment>
 </net>
+<net name="GPIO_2" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="93.98" width="0.1524" layer="91" grouprefs="USER_IO"/>
+<label x="99.06" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="USER_IO"/>
+</segment>
+</net>
 <net name="GPIO_1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -10778,28 +10803,32 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="91.44" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J3[GROVE]" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$10" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="J3[GROVE]" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="J4[GROVE]" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91" grouprefs="GROVE"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91" grouprefs="GROVE"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
