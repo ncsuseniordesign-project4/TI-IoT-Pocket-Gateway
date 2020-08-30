@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -7125,12 +7125,31 @@ LED</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -10175,6 +10194,181 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </deviceset>
 </devicesets>
 </library>
+<library name="PCA9306">
+<packages>
+<package name="DQE8">
+<smd name="1" x="-0.208" y="0.525" dx="0.784" dy="0.2" layer="1" cream="no"/>
+<smd name="2" x="-0.335" y="0.175" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="3" x="-0.335" y="-0.175" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="4" x="-0.335" y="-0.525" dx="0.53" dy="0.2" layer="1" cream="no"/>
+<smd name="5" x="0.335" y="-0.525" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="6" x="0.335" y="-0.175" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="7" x="0.335" y="0.175" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="0.335" y="0.525" dx="0.53" dy="0.2" layer="1" rot="R180" cream="no"/>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="0.61"/>
+<vertex x="-0.585" y="0.44"/>
+<vertex x="-0.085" y="0.44"/>
+<vertex x="-0.085" y="0.61"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="0.26"/>
+<vertex x="-0.585" y="0.09"/>
+<vertex x="-0.085" y="0.09"/>
+<vertex x="-0.085" y="0.26"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="-0.09"/>
+<vertex x="-0.585" y="-0.26"/>
+<vertex x="-0.085" y="-0.26"/>
+<vertex x="-0.085" y="-0.09"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.585" y="-0.44"/>
+<vertex x="-0.585" y="-0.61"/>
+<vertex x="-0.085" y="-0.61"/>
+<vertex x="-0.085" y="-0.44"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="-0.44"/>
+<vertex x="0.085" y="-0.61"/>
+<vertex x="0.585" y="-0.61"/>
+<vertex x="0.585" y="-0.44"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="-0.09"/>
+<vertex x="0.085" y="-0.26"/>
+<vertex x="0.585" y="-0.26"/>
+<vertex x="0.585" y="-0.09"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="0.26"/>
+<vertex x="0.085" y="0.09"/>
+<vertex x="0.585" y="0.09"/>
+<vertex x="0.585" y="0.26"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.085" y="0.61"/>
+<vertex x="0.085" y="0.44"/>
+<vertex x="0.585" y="0.44"/>
+<vertex x="0.585" y="0.61"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="0.675"/>
+<vertex x="-0.65" y="0.375"/>
+<vertex x="-0.02" y="0.375"/>
+<vertex x="-0.02" y="0.675"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="0.325"/>
+<vertex x="-0.65" y="0.025"/>
+<vertex x="-0.02" y="0.025"/>
+<vertex x="-0.02" y="0.325"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="-0.025"/>
+<vertex x="-0.65" y="-0.325"/>
+<vertex x="-0.02" y="-0.325"/>
+<vertex x="-0.02" y="-0.025"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="-0.65" y="-0.375"/>
+<vertex x="-0.65" y="-0.675"/>
+<vertex x="-0.02" y="-0.675"/>
+<vertex x="-0.02" y="-0.375"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="-0.375"/>
+<vertex x="0.02" y="-0.675"/>
+<vertex x="0.65" y="-0.675"/>
+<vertex x="0.65" y="-0.375"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="-0.025"/>
+<vertex x="0.02" y="-0.325"/>
+<vertex x="0.65" y="-0.325"/>
+<vertex x="0.65" y="-0.025"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="0.325"/>
+<vertex x="0.02" y="0.025"/>
+<vertex x="0.65" y="0.025"/>
+<vertex x="0.65" y="0.325"/>
+</polygon>
+<polygon width="0.0254" layer="29">
+<vertex x="0.02" y="0.675"/>
+<vertex x="0.02" y="0.375"/>
+<vertex x="0.65" y="0.375"/>
+<vertex x="0.65" y="0.675"/>
+</polygon>
+<wire x1="-0.762" y1="-0.9652" x2="0.762" y2="-0.9652" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.9652" x2="-0.762" y2="0.9652" width="0.1524" layer="21"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-0.508" y1="-0.7112" x2="0.508" y2="-0.7112" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="-0.7112" x2="0.508" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="0.7112" x2="-0.3048" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.7112" x2="-0.508" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.508" y1="0.7112" x2="-0.508" y2="-0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.8128" y1="0.5334" x2="-0.9652" y2="0.5334" width="0" layer="51" curve="-180"/>
+<wire x1="-0.9652" y1="0.5334" x2="-0.8128" y2="0.5334" width="0" layer="51" curve="-180"/>
+<wire x1="0.3048" y1="0.7366" x2="-0.3048" y2="0.7112" width="0.1524" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PCA9306_DQE_8">
+<pin name="GND" x="2.54" y="0" length="middle" direction="pwr"/>
+<pin name="VREF1" x="2.54" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SCL1" x="2.54" y="-5.08" length="middle" direction="pas"/>
+<pin name="SDA1" x="2.54" y="-7.62" length="middle" direction="pas"/>
+<pin name="SDA2" x="63.5" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SCL2" x="63.5" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VREF2" x="63.5" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="EN" x="63.5" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="58.42" y1="-12.7" x2="58.42" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="28.2956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="27.6606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCA9306DQER" prefix="U">
+<gates>
+<gate name="A" symbol="PCA9306_DQE_8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DQE8">
+<connects>
+<connect gate="A" pin="EN" pad="8"/>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="SCL1" pad="3"/>
+<connect gate="A" pin="SCL2" pad="6"/>
+<connect gate="A" pin="SDA1" pad="4"/>
+<connect gate="A" pin="SDA2" pad="5"/>
+<connect gate="A" pin="VREF1" pad="2"/>
+<connect gate="A" pin="VREF2" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET_URL" value="http://www.ti.com/lit/gpn/PCA9306" constant="no"/>
+<attribute name="DESCRIPTION" value="Dual Bi-Directional I2C-Bus and SMBus Voltage Level-Translator" constant="no"/>
+<attribute name="FAMILY_NAME" value="I2C SPECIAL FUNCTION" constant="no"/>
+<attribute name="GENERIC_PART_NUMBER" value="PCA9306" constant="no"/>
+<attribute name="INDUSTRY_STD_PKG_TYPE" value="X2SON" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PCA9306DQER" constant="no"/>
+<attribute name="PACKAGE_DESIGNATOR" value="DQE" constant="no"/>
+<attribute name="PIN_COUNT" value="8" constant="no"/>
+<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10188,20 +10382,22 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <schematic_group name="POWER"/>
 <schematic_group name="USER_IO"/>
 <schematic_group name="POCKETBEAGLE_INTERFACE"/>
-<schematic_group name="MODEM"/>
 <schematic_group name="USB"/>
+<schematic_group name="GROVE"/>
 </groups>
 <parts>
-<part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1"/>
-<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1"/>
+<part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="1uF">
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1 uF"/>
 <part name="IC1" library="MIC29302WU" deviceset="MIC29302WU" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="100 uF"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="330 uF"/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U1" library="SIM7000E" deviceset="SIM7000E" device=""/>
@@ -10222,9 +10418,9 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
-<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
-<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value=" "/>
+<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="47k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="100k"/>
+<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="470"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -10261,22 +10457,25 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:8360/1"/>
 <part name="U2" library="TUSB2046B" deviceset="TUSB2046BIRHBR" device=""/>
 <part name="U$1" library="Personal" deviceset="MSQA6V1W5T2G" device=""/>
+<part name="U3" library="PCA9306" deviceset="PCA9306DQER" device=""/>
+<part name="X_18" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="40.64" y="-7.62" smashed="yes" grouprefs="MODEM">
+<instance part="U1" gate="G$1" x="40.64" y="-7.62" smashed="yes">
 <attribute name="NAME" x="20.2966" y="26.7095" size="1.78005" layer="95"/>
 <attribute name="VALUE" x="20.2956" y="-40.6796" size="1.78013125" layer="96"/>
 </instance>
-<instance part="X_8" gate="G$1" x="68.58" y="-40.64" smashed="yes" rot="MR0" grouprefs="MODEM"/>
-<instance part="J1[SIMCARD]" gate="G$1" x="114.3" y="12.7" smashed="yes" grouprefs="MODEM">
+<instance part="X_8" gate="G$1" x="68.58" y="-40.64" smashed="yes" rot="MR0"/>
+<instance part="J1[SIMCARD]" gate="G$1" x="114.3" y="12.7" smashed="yes">
 <attribute name="NAME" x="107.1786" y="23.3776" size="1.780359375" layer="95"/>
 <attribute name="VALUE" x="106.90353125" y="-2.084" size="1.78643125" layer="96"/>
 </instance>
-<instance part="X_9" gate="G$1" x="132.08" y="0" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="X_9" gate="G$1" x="132.08" y="0" smashed="yes" rot="MR0"/>
 <instance part="J2" gate="G$1" x="139.7" y="86.36" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="132.068909375" y="95.008559375" size="1.27185" layer="95"/>
 <attribute name="VALUE" x="132.067040625" y="73.6384" size="1.272159375" layer="96"/>
@@ -10285,14 +10484,14 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="P+2" gate="1" x="114.3" y="99.06" smashed="yes" grouprefs="USB">
 <attribute name="VALUE" x="111.76" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+7" gate="1" x="-15.24" y="17.78" smashed="yes" grouprefs="MODEM">
+<instance part="P+7" gate="1" x="-15.24" y="17.78" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C6" gate="G$1" x="137.16" y="25.4" smashed="yes" grouprefs="MODEM">
+<instance part="C6" gate="G$1" x="137.16" y="25.4" smashed="yes">
 <attribute name="NAME" x="138.684" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="138.684" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="X_17" gate="G$1" x="137.16" y="20.32" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="X_17" gate="G$1" x="137.16" y="20.32" smashed="yes" rot="MR0"/>
 <instance part="BRD1" gate="G$1" x="63.5" y="-124.46" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_INTERFACE">
 <attribute name="NAME" x="-15.24" y="-111.76" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="-12.7" y="-111.76" size="1.778" layer="96" rot="R90" align="center-left"/>
@@ -10309,7 +10508,15 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <attribute name="NAME" x="30.8356" y="110.7186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="30.2006" y="108.1786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U$1" gate="G$1" x="109.22" y="-35.56" smashed="yes" rot="MR0" grouprefs="MODEM"/>
+<instance part="U$1" gate="G$1" x="109.22" y="-35.56" smashed="yes" rot="MR0"/>
+<instance part="U3" gate="A" x="-71.12" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-42.8244" y="1.4986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="-43.4594" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="X_18" gate="G$1" x="-73.66" y="0" smashed="yes" rot="MR0"/>
+<instance part="+3V1" gate="G$1" x="2.54" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="0" y="-10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10317,15 +10524,15 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="VBAT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
-<wire x1="66.04" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="68.58" y="22.86" size="1.778" layer="95" xref="yes" grouprefs="MODEM"/>
+<wire x1="66.04" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
+<label x="68.58" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="0" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="GND"/>
-<wire x1="127" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="2.54" x2="132.08" y2="0" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="127" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="2.54" x2="132.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -10340,28 +10547,35 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="66.04" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="X_8" gate="G$1" pin="0"/>
-<wire x1="68.58" y1="-40.64" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="68.58" y1="-40.64" x2="68.58" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <wire x1="83.82" y1="-25.4" x2="76.2" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-25.4" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="68.58" y="-35.56"/>
 </segment>
+<segment>
+<pinref part="X_18" gate="G$1" pin="0"/>
+<wire x1="-73.66" y1="0" x2="-73.66" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="GND"/>
+<wire x1="-73.66" y1="2.54" x2="-68.58" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="2.54" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_VDD"/>
-<wire x1="66.04" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="83.82" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="91.44" y1="17.78" x2="91.44" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="91.44" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="27.94" x2="132.08" y2="20.32" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="17.78" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="VCC"/>
-<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="132.08" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91" grouprefs="MODEM"/>
-<junction x="132.08" y="27.94" grouprefs="MODEM"/>
+<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
+<junction x="132.08" y="27.94"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="17.78" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="83.82" y="17.78"/>
@@ -10373,12 +10587,12 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_DATA"/>
-<wire x1="66.04" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="101.6" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="119.38" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="142.24" y1="-5.08" x2="142.24" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="142.24" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-5.08" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="I/O"/>
 <wire x1="119.38" y1="-5.08" x2="119.38" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="119.38" y="-5.08"/>
@@ -10394,10 +10608,10 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="7.62" x2="-15.24" y2="15.24" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="U1" gate="G$1" pin="USB_VBUS"/>
-<wire x1="15.24" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="15.24" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="WIFI_D-" class="0">
@@ -10417,44 +10631,46 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <net name="MODEM_D+" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DP"/>
-<wire x1="15.24" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="5.08" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<label x="10.16" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MODEM_D-" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DM"/>
-<wire x1="15.24" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="2.54" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91"/>
+<label x="10.16" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART_TXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
-<wire x1="15.24" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="7.62" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
+<label x="12.7" y="-12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U3" gate="A" pin="SCL2"/>
 </segment>
 </net>
 <net name="UART_RXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
-<wire x1="15.24" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="7.62" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
+<label x="12.7" y="-15.24" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="U3" gate="A" pin="SDA2"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!NRESET"/>
-<wire x1="15.24" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
-<label x="10.16" y="10.16" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="MODEM"/>
+<wire x1="15.24" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="10.16" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="RST"/>
 <pinref part="U1" gate="G$1" pin="SIM_CLK"/>
-<wire x1="66.04" y1="12.7" x2="81.28" y2="12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
-<wire x1="81.28" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="66.04" y1="12.7" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="12.7" x2="81.28" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="81.28" y="12.7"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
@@ -10465,12 +10681,37 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="CLK"/>
 <pinref part="U1" gate="G$1" pin="SIM_RST"/>
-<wire x1="101.6" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="101.6" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
-<wire x1="78.74" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91" grouprefs="MODEM"/>
+<wire x1="78.74" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="10.16" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-33.02" x2="83.82" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="78.74" y="10.16"/>
+</segment>
+</net>
+<net name="VDD_EXT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD_EXT"/>
+<wire x1="66.04" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<label x="68.58" y="20.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="VREF1"/>
+<wire x1="-68.58" y1="-10.16" x2="-71.12" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-71.12" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="VREF2"/>
+<wire x1="-7.62" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-10.16"/>
+<pinref part="U3" gate="A" pin="EN"/>
+<wire x1="-2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -10519,20 +10760,20 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <instance part="X_25" gate="G$1" x="55.88" y="68.58" smashed="yes" rot="MR0" grouprefs="USER_IO"/>
 <instance part="SW3" gate="G$1" x="55.88" y="86.36" smashed="yes" rot="R90" grouprefs="USER_IO"/>
 <instance part="P+12" gate="1" x="55.88" y="104.14" smashed="yes" grouprefs="USER_IO"/>
-<instance part="J3[GROVE]" gate="G$1" x="177.8" y="96.52" smashed="yes"/>
-<instance part="P+3" gate="1" x="160.02" y="111.76" smashed="yes"/>
-<instance part="P+4" gate="1" x="149.86" y="109.22" smashed="yes"/>
-<instance part="X_14" gate="G$1" x="167.64" y="91.44" smashed="yes" rot="MR0"/>
-<instance part="P+5" gate="1" x="167.64" y="114.3" smashed="yes"/>
-<instance part="C2" gate="G$1" x="177.8" y="109.22" smashed="yes" rot="R270"/>
-<instance part="X_15" gate="G$1" x="180.34" y="109.22" smashed="yes" rot="MR270"/>
-<instance part="J4[GROVE]" gate="G$1" x="177.8" y="68.58" smashed="yes"/>
-<instance part="P+8" gate="1" x="160.02" y="83.82" smashed="yes"/>
-<instance part="P+9" gate="1" x="149.86" y="81.28" smashed="yes"/>
-<instance part="X_22" gate="G$1" x="167.64" y="63.5" smashed="yes" rot="MR0"/>
-<instance part="P+10" gate="1" x="167.64" y="86.36" smashed="yes"/>
-<instance part="C7" gate="G$1" x="177.8" y="81.28" smashed="yes" rot="R270"/>
-<instance part="X_23" gate="G$1" x="180.34" y="81.28" smashed="yes" rot="MR270"/>
+<instance part="J3[GROVE]" gate="G$1" x="149.86" y="86.36" smashed="yes" grouprefs="GROVE"/>
+<instance part="P+3" gate="1" x="132.08" y="101.6" smashed="yes" grouprefs="GROVE"/>
+<instance part="P+4" gate="1" x="121.92" y="99.06" smashed="yes" grouprefs="GROVE"/>
+<instance part="X_14" gate="G$1" x="139.7" y="81.28" smashed="yes" rot="MR0" grouprefs="GROVE"/>
+<instance part="P+5" gate="1" x="139.7" y="104.14" smashed="yes" grouprefs="GROVE"/>
+<instance part="C2" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="R270" grouprefs="GROVE"/>
+<instance part="X_15" gate="G$1" x="152.4" y="99.06" smashed="yes" rot="MR270" grouprefs="GROVE"/>
+<instance part="J4[GROVE]" gate="G$1" x="149.86" y="58.42" smashed="yes" grouprefs="GROVE"/>
+<instance part="P+8" gate="1" x="132.08" y="73.66" smashed="yes" grouprefs="GROVE"/>
+<instance part="P+9" gate="1" x="121.92" y="71.12" smashed="yes" grouprefs="GROVE"/>
+<instance part="X_22" gate="G$1" x="139.7" y="53.34" smashed="yes" rot="MR0" grouprefs="GROVE"/>
+<instance part="P+10" gate="1" x="139.7" y="76.2" smashed="yes" grouprefs="GROVE"/>
+<instance part="C7" gate="G$1" x="149.86" y="71.12" smashed="yes" rot="R270" grouprefs="GROVE"/>
+<instance part="X_23" gate="G$1" x="152.4" y="71.12" smashed="yes" rot="MR270" grouprefs="GROVE"/>
 </instances>
 <busses>
 </busses>
@@ -10619,7 +10860,7 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </segment>
 <segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="4"/>
-<wire x1="167.64" y1="93.98" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="139.7" y2="81.28" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_14" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -10628,7 +10869,7 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="4"/>
-<wire x1="167.64" y1="66.04" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="55.88" x2="139.7" y2="53.34" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_22" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -10678,45 +10919,45 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 </segment>
 <segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="101.6" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="109.22" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
-<junction x="167.64" y="109.22"/>
+<wire x1="139.7" y1="91.44" x2="139.7" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="139.7" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="139.7" y1="99.06" x2="139.7" y2="101.6" width="0.1524" layer="91" grouprefs="GROVE"/>
+<junction x="139.7" y="99.06" grouprefs="GROVE"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="73.66" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="81.28" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
-<junction x="167.64" y="81.28"/>
+<wire x1="139.7" y1="63.5" x2="139.7" y2="71.12" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="139.7" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="139.7" y1="71.12" x2="139.7" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<junction x="139.7" y="71.12" grouprefs="GROVE"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="3"/>
-<wire x1="167.64" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="149.86" y1="106.68" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="96.52" x2="121.92" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 <segment>
 <pinref part="J3[GROVE]" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="160.02" y1="109.22" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="99.06" x2="132.08" y2="88.9" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="3"/>
-<wire x1="167.64" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="149.86" y1="68.58" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="58.42" x2="121.92" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="160.02" y1="71.12" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="60.96" x2="132.08" y2="71.12" width="0.1524" layer="91" grouprefs="GROVE"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
