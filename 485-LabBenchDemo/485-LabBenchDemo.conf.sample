@@ -1,0 +1,10 @@
+// 485-LabBenchDemo configuration file.
+// This file must be in JSON format.
+// Usage:
+// Add IoT device primary key as the "secretKey" value.
+// Save file to "/etc/485-LabBenchDemo.conf".
+//
+{
+    // Personal Azure IoT Device primary key
+    "secretKey": "[your-iot-device-primary-key-here]"
+}
