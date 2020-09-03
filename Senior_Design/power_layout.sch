@@ -10970,6 +10970,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="-36.83" y="171.45" grouprefs="USB"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="24"/>
+<wire x1="20.32" y1="-125.73" x2="20.32" y2="-128.27" width="0.1524" layer="91"/>
+<label x="20.32" y="-128.27" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="USB1_D-" class="0">
 <segment>
@@ -11364,6 +11369,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-26.67" y1="139.7" x2="-26.67" y2="142.24" width="0.1524" layer="91" grouprefs="USB"/>
 <label x="-26.67" y="142.24" size="1.778" layer="95" xref="yes" grouprefs="USB"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="41.91" x2="25.4" y2="49.53" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="25.4" y="49.53" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+</segment>
 </net>
 <net name="VDD_EXT" class="0">
 <segment>
@@ -11400,13 +11410,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="SV2" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="-128.27" x2="116.84" y2="-116.84" width="0.1524" layer="91"/>
 <label x="116.84" y="-116.84" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="PWR" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="41.91" x2="25.4" y2="49.53" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="25.4" y="49.53" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -11818,6 +11821,20 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
+<net name="I2C2_SDA" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="26"/>
+<wire x1="17.78" y1="-125.73" x2="17.78" y2="-128.27" width="0.1524" layer="91"/>
+<label x="17.78" y="-128.27" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="I2C2_SCL" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="28"/>
+<wire x1="15.24" y1="-125.73" x2="15.24" y2="-128.27" width="0.1524" layer="91"/>
+<label x="15.24" y="-128.27" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -11980,6 +11997,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="25.4" y="33.02" grouprefs="POWER"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="2.54" y1="33.02" x2="2.54" y2="35.56" width="0.1524" layer="91" grouprefs="POWER"/>
+<label x="5.08" y="38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -11995,6 +12013,18 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="P+12" gate="1" pin="+5V"/>
 <pinref part="SW3" gate="G$1" pin="P$2"/>
 <wire x1="55.88" y1="101.6" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GROVE1" gate="G$1" pin="3"/>
+<wire x1="133.35" y1="73.66" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="125.73" y1="86.36" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<label x="125.73" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
+</segment>
+<segment>
+<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
+<wire x1="162.56" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="154.94" y1="73.66" x2="154.94" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
+<label x="154.94" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
 </segment>
 </net>
 <net name="LED3" class="0">
@@ -12036,14 +12066,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
-<wire x1="162.56" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<wire x1="154.94" y1="73.66" x2="154.94" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
-<label x="154.94" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
-</segment>
-</net>
 <net name="I2C2_SDA" class="0">
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="2"/>
@@ -12058,14 +12080,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="133.35" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="129.54" y1="86.36" x2="129.54" y2="76.2" width="0.1524" layer="91" grouprefs="GROVE"/>
 <label x="129.54" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="GROVE1" gate="G$1" pin="3"/>
-<wire x1="133.35" y1="73.66" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<wire x1="125.73" y1="86.36" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<label x="125.73" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
 </segment>
 </net>
 <net name="I2C1_SCL" class="0">
