@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5236,6 +5236,74 @@ LED</description>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09911"/>
 <attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-YELLOW" urn="urn:adsk.eagle:component:39387/1" prefix="D" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;Yellow SMD LED&lt;/h3&gt;
+
+Used in manufacturing several products at SparkFun. 
+
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; -  SMD 0603  package&lt;a href=http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608SYCK"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 0603 -SMART&lt;/b&gt; - SMART SMD 0603  package (more efficient/more expensive) &lt;a href="http://www.osram-os.com/osram_os/en/products/product-catalog/led-light-emitting-diodes/smartled-0603/ly-l29k/index.jsp"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; LilyPad&lt;/b&gt; - SMD1206  package&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150YUS4.pdf"&gt;[Product Datasheet]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13225”&gt;XBee Explorer Serial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LILYPAD" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39352/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09909"/>
+<attribute name="VALUE" value="Yellow" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39354/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09003"/>
+<attribute name="VALUE" value="Yellow" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0603-SMART" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39354/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11230" constant="no"/>
+<attribute name="VALUE" value="Yellow" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10502,6 +10570,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <schematic_group name="USB"/>
 <schematic_group name="POCKETBEAGLE_PINS"/>
 <schematic_group name="SIM7000"/>
+<schematic_group name="RF_ANT"/>
 </groups>
 <parts>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
@@ -10529,9 +10598,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="GROVE1" library="640456-4" deviceset="640456-4" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
-<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
+<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
+<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
@@ -10614,68 +10683,75 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1"/>
+<part name="D4" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-YELLOW" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="Yellow"/>
+<part name="X_37" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R28" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
+<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="83.82" y="6.35" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="63.4766" y="40.6795" size="1.78005" layer="95"/>
-<attribute name="VALUE" x="63.4756" y="-26.7096" size="1.78013125" layer="96"/>
+<instance part="U1" gate="G$1" x="78.74" y="-3.81" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="58.3966" y="30.5195" size="1.78005" layer="95"/>
+<attribute name="VALUE" x="58.3956" y="-36.8696" size="1.78013125" layer="96"/>
 </instance>
-<instance part="X_8" gate="G$1" x="111.76" y="-26.67" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="J1[SIMCARD]" gate="G$1" x="157.48" y="26.67" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="150.3586" y="37.3476" size="1.780359375" layer="95"/>
-<attribute name="VALUE" x="150.08353125" y="11.886" size="1.78643125" layer="96"/>
+<instance part="X_8" gate="G$1" x="106.68" y="-36.83" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="J1[SIMCARD]" gate="G$1" x="152.4" y="16.51" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="145.2786" y="27.1876" size="1.780359375" layer="95"/>
+<attribute name="VALUE" x="145.00353125" y="1.726" size="1.78643125" layer="96"/>
 </instance>
-<instance part="X_9" gate="G$1" x="175.26" y="13.97" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="X_9" gate="G$1" x="170.18" y="3.81" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
 <instance part="X_13" gate="G$1" x="140.97" y="100.33" smashed="yes" rot="MR0" grouprefs="USB"/>
-<instance part="P+7" gate="1" x="27.94" y="31.75" smashed="yes" grouprefs="SIM7000">
-<attribute name="VALUE" x="25.4" y="26.67" size="1.778" layer="96" rot="R270"/>
+<instance part="P+7" gate="1" x="22.86" y="21.59" smashed="yes" grouprefs="SIM7000">
+<attribute name="VALUE" x="20.32" y="16.51" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C6" gate="G$1" x="180.34" y="39.37" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="181.864" y="39.751" size="1.778" layer="95"/>
-<attribute name="VALUE" x="181.864" y="34.671" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="175.26" y="29.21" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="176.784" y="29.591" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.784" y="24.511" size="1.778" layer="96"/>
 </instance>
-<instance part="X_17" gate="G$1" x="180.34" y="34.29" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="BRD1" gate="G$1" x="63.5" y="-186.69" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
-<attribute name="NAME" x="-15.24" y="-173.99" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="-12.7" y="-173.99" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="X_17" gate="G$1" x="175.26" y="24.13" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="BRD1" gate="G$1" x="99.06" y="-156.21" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
+<attribute name="NAME" x="20.32" y="-143.51" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="22.86" y="-143.51" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="SV1" gate="G$1" x="27.94" y="-118.11" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
-<attribute name="VALUE" x="53.34" y="-121.92" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="1.778" y="-121.92" size="1.778" layer="95" rot="R90"/>
+<instance part="SV1" gate="G$1" x="63.5" y="-80.01" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
+<attribute name="VALUE" x="88.9" y="-83.82" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="37.338" y="-83.82" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="SV2" gate="G$1" x="96.52" y="-120.65" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
-<attribute name="VALUE" x="121.92" y="-124.46" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="70.358" y="-124.46" size="1.778" layer="95" rot="R90"/>
+<instance part="SV2" gate="G$1" x="132.08" y="-82.55" smashed="yes" rot="R90" grouprefs="POCKETBEAGLE_PINS">
+<attribute name="VALUE" x="157.48" y="-86.36" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="105.918" y="-86.36" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="152.4" y="-21.59" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="U3" gate="A" x="35.56" y="-6.35" smashed="yes" rot="R180" grouprefs="SIM7000">
-<attribute name="NAME" x="7.2644" y="-15.4686" size="2.0828" layer="95" ratio="6" rot="SR180"/>
-<attribute name="VALUE" x="7.8994" y="-12.9286" size="2.0828" layer="96" ratio="6" rot="SR180"/>
+<instance part="U$1" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="U3" gate="A" x="30.48" y="-16.51" smashed="yes" rot="R180" grouprefs="SIM7000">
+<attribute name="NAME" x="2.1844" y="-25.6286" size="2.0828" layer="95" ratio="6" rot="SR180"/>
+<attribute name="VALUE" x="2.8194" y="-23.0886" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
-<instance part="X1" gate="-1" x="-48.26" y="-1.27" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
-<attribute name="NAME" x="-50.8" y="-0.508" size="1.524" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-47.498" y="-2.667" size="1.778" layer="96" rot="R180"/>
+<instance part="X1" gate="-1" x="-53.34" y="-11.43" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<attribute name="NAME" x="-55.88" y="-10.668" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-52.578" y="-12.827" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="-48.26" y="1.27" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
-<attribute name="NAME" x="-50.8" y="2.032" size="1.524" layer="95" rot="R180"/>
+<instance part="X1" gate="-2" x="-53.34" y="-8.89" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<attribute name="NAME" x="-55.88" y="-8.128" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-3" x="-48.26" y="3.81" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
-<attribute name="NAME" x="-50.8" y="4.572" size="1.524" layer="95" rot="R180"/>
+<instance part="X1" gate="-3" x="-53.34" y="-6.35" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<attribute name="NAME" x="-55.88" y="-5.588" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-4" x="-48.26" y="6.35" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
-<attribute name="NAME" x="-50.8" y="7.112" size="1.524" layer="95" rot="R180"/>
+<instance part="X1" gate="-4" x="-53.34" y="-3.81" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<attribute name="NAME" x="-55.88" y="-3.048" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="J1" gate="A" x="143.51" y="119.38" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="147.6756" y="124.6886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="X_18" gate="G$1" x="99.06" y="-91.44" smashed="yes" rot="MR180" grouprefs="POCKETBEAGLE_PINS"/>
-<instance part="TP1" gate="G$1" x="48.26" y="-8.89" smashed="yes" rot="R90" grouprefs="SIM7000">
-<attribute name="NAME" x="50.8" y="-11.43" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="49.53" y="-7.62" size="1.778" layer="97" rot="R90"/>
+<instance part="X_18" gate="G$1" x="134.62" y="-53.34" smashed="yes" rot="MR180" grouprefs="POCKETBEAGLE_PINS"/>
+<instance part="TP1" gate="G$1" x="43.18" y="-19.05" smashed="yes" rot="R90" grouprefs="SIM7000">
+<attribute name="NAME" x="45.72" y="-21.59" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="44.45" y="-17.78" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="R7" gate="G$1" x="-38.1" y="132.08" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="-38.1" y="133.604" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -10685,46 +10761,46 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="-38.1" y="124.714" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-38.1" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="X_19" gate="G$1" x="-45.72" y="19.05" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="T1" gate="G$1" x="43.18" y="41.91" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="35.56" y="44.45" size="1.778" layer="95"/>
-<attribute name="VALUE" x="33.02" y="46.99" size="1.778" layer="96"/>
+<instance part="X_19" gate="G$1" x="-50.8" y="8.89" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="T1" gate="G$1" x="38.1" y="31.75" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="30.48" y="34.29" size="1.778" layer="95"/>
+<attribute name="VALUE" x="27.94" y="36.83" size="1.778" layer="96"/>
 </instance>
-<instance part="T2" gate="G$1" x="15.24" y="41.91" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="10.16" y="44.45" size="1.778" layer="95"/>
-<attribute name="VALUE" x="2.54" y="46.99" size="1.778" layer="96"/>
+<instance part="T2" gate="G$1" x="10.16" y="31.75" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="5.08" y="34.29" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-2.54" y="36.83" size="1.778" layer="96"/>
 </instance>
-<instance part="X_20" gate="G$1" x="17.78" y="31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="X_21" gate="G$1" x="45.72" y="29.21" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="C8" gate="G$1" x="50.8" y="44.45" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="51.816" y="45.085" size="1.778" layer="95"/>
-<attribute name="VALUE" x="51.816" y="40.259" size="1.778" layer="96"/>
+<instance part="X_20" gate="G$1" x="12.7" y="21.59" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="X_21" gate="G$1" x="40.64" y="19.05" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="C8" gate="G$1" x="45.72" y="34.29" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="46.736" y="34.925" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.736" y="30.099" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="38.1" y="-6.35" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="39.116" y="-10.795" size="1.778" layer="95"/>
-<attribute name="VALUE" x="39.116" y="-10.541" size="1.778" layer="96"/>
+<instance part="C9" gate="G$1" x="33.02" y="-16.51" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="34.036" y="-20.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.036" y="-20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="X_26" gate="G$1" x="38.1" y="-16.51" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="X_27" gate="G$1" x="50.8" y="39.37" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="C10" gate="G$1" x="-38.1" y="16.51" smashed="yes" rot="R180" grouprefs="SIM7000">
-<attribute name="NAME" x="-39.116" y="15.875" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-39.116" y="20.701" size="1.778" layer="96" rot="R180"/>
+<instance part="X_26" gate="G$1" x="33.02" y="-26.67" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="X_27" gate="G$1" x="45.72" y="29.21" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="C10" gate="G$1" x="-43.18" y="6.35" smashed="yes" rot="R180" grouprefs="SIM7000">
+<attribute name="NAME" x="-44.196" y="5.715" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-44.196" y="10.541" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R11" gate="G$1" x="12.7" y="34.29" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="12.7" y="35.814" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="12.7" y="32.766" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R11" gate="G$1" x="7.62" y="24.13" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="7.62" y="25.654" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="7.62" y="22.606" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R18" gate="G$1" x="40.64" y="31.75" smashed="yes" rot="R180" grouprefs="SIM7000">
-<attribute name="NAME" x="40.64" y="30.226" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="40.64" y="33.274" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+<instance part="R18" gate="G$1" x="35.56" y="21.59" smashed="yes" rot="R180" grouprefs="SIM7000">
+<attribute name="NAME" x="35.56" y="20.066" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="23.114" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="2.54" y="41.91" smashed="yes" grouprefs="SIM7000">
-<attribute name="NAME" x="2.54" y="43.434" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="2.54" y="40.386" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R12" gate="G$1" x="-2.54" y="31.75" smashed="yes" grouprefs="SIM7000">
+<attribute name="NAME" x="-2.54" y="33.274" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-2.54" y="30.226" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R17" gate="G$1" x="30.48" y="41.91" smashed="yes" rot="R180" grouprefs="SIM7000">
-<attribute name="NAME" x="30.48" y="40.386" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="30.48" y="43.434" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+<instance part="R17" gate="G$1" x="25.4" y="31.75" smashed="yes" rot="R180" grouprefs="SIM7000">
+<attribute name="NAME" x="25.4" y="30.226" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="25.4" y="33.274" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 <instance part="R19" gate="G$1" x="-35.56" y="90.17" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="-35.56" y="91.694" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -10742,10 +10818,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="86.36" y="91.694" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="86.36" y="83.566" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J2" gate="A" x="-49.53" y="-50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="-53.6956" y="-56.1086" size="2.0828" layer="95" ratio="6" rot="SR180"/>
+<instance part="J2" gate="A" x="-46.99" y="-63.5" smashed="yes" rot="R180" grouprefs="RF_ANT">
+<attribute name="NAME" x="-51.1556" y="-68.8086" size="2.0828" layer="95" ratio="6" rot="SR180"/>
 </instance>
-<instance part="X_28" gate="G$1" x="-46.99" y="-54.61" smashed="yes" rot="MR0"/>
+<instance part="X_28" gate="G$1" x="-44.45" y="-67.31" smashed="yes" rot="MR0" grouprefs="RF_ANT"/>
 <instance part="U2" gate="A" x="-25.4" y="129.54" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="20.6756" y="138.6586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="20.0406" y="136.1186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
@@ -10765,23 +10841,23 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </instance>
 <instance part="X_31" gate="G$1" x="-53.34" y="111.76" smashed="yes" rot="MR0" grouprefs="USB"/>
 <instance part="X_32" gate="G$1" x="91.44" y="127" smashed="yes" rot="MR270" grouprefs="USB"/>
-<instance part="CR1" gate="A" x="134.62" y="175.26" smashed="yes" grouprefs="USB">
-<attribute name="NAME" x="131.8006" y="177.9524" size="3.4798" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="130.7338" y="169.0624" size="3.4798" layer="96" ratio="10" rot="SR0"/>
+<instance part="CR1" gate="A" x="127" y="175.26" smashed="yes" grouprefs="USB">
+<attribute name="NAME" x="124.1806" y="177.9524" size="3.4798" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="123.1138" y="169.0624" size="3.4798" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="R9" gate="G$1" x="170.18" y="175.26" smashed="yes" grouprefs="USB">
-<attribute name="NAME" x="170.18" y="176.784" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="170.18" y="173.736" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R9" gate="G$1" x="162.56" y="175.26" smashed="yes" grouprefs="USB">
+<attribute name="NAME" x="162.56" y="176.784" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="162.56" y="173.736" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="C12" gate="G$1" x="119.38" y="163.83" smashed="yes" grouprefs="USB">
-<attribute name="NAME" x="120.396" y="164.465" size="1.778" layer="95"/>
-<attribute name="VALUE" x="120.396" y="159.639" size="1.778" layer="96"/>
+<instance part="C12" gate="G$1" x="111.76" y="163.83" smashed="yes" grouprefs="USB">
+<attribute name="NAME" x="112.776" y="164.465" size="1.778" layer="95"/>
+<attribute name="VALUE" x="112.776" y="159.639" size="1.778" layer="96"/>
 </instance>
-<instance part="C13" gate="G$1" x="156.21" y="163.83" smashed="yes" grouprefs="USB">
-<attribute name="NAME" x="157.226" y="164.465" size="1.778" layer="95"/>
-<attribute name="VALUE" x="157.226" y="159.639" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="148.59" y="163.83" smashed="yes" grouprefs="USB">
+<attribute name="NAME" x="149.606" y="164.465" size="1.778" layer="95"/>
+<attribute name="VALUE" x="149.606" y="159.639" size="1.778" layer="96"/>
 </instance>
-<instance part="X_33" gate="G$1" x="139.7" y="149.86" smashed="yes" rot="MR0" grouprefs="USB"/>
+<instance part="X_33" gate="G$1" x="132.08" y="149.86" smashed="yes" rot="MR0" grouprefs="USB"/>
 <instance part="R23" gate="G$1" x="-46.99" y="85.09" smashed="yes" rot="R90" grouprefs="USB">
 <attribute name="NAME" x="-48.514" y="85.09" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-45.466" y="85.09" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -10804,26 +10880,40 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="-28.194" y="134.62" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-25.146" y="134.62" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="C14" gate="G$1" x="-26.67" y="-54.61" smashed="yes">
-<attribute name="NAME" x="-25.654" y="-53.975" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-25.654" y="-58.801" size="1.778" layer="96"/>
+<instance part="C14" gate="G$1" x="-24.13" y="-67.31" smashed="yes" grouprefs="RF_ANT">
+<attribute name="NAME" x="-23.114" y="-66.675" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-23.114" y="-71.501" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="-13.97" y="-54.61" smashed="yes">
-<attribute name="NAME" x="-12.954" y="-53.975" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-12.954" y="-58.801" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="-11.43" y="-67.31" smashed="yes" grouprefs="RF_ANT">
+<attribute name="NAME" x="-10.414" y="-66.675" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-10.414" y="-71.501" size="1.778" layer="96"/>
 </instance>
-<instance part="R26" gate="G$1" x="-20.32" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-20.32" y="-46.736" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="-20.32" y="-49.784" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R26" gate="G$1" x="-17.78" y="-60.96" smashed="yes" grouprefs="RF_ANT">
+<attribute name="NAME" x="-17.78" y="-59.436" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-17.78" y="-62.484" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R27" gate="G$1" x="-31.75" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-31.75" y="-46.736" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="-31.75" y="-49.784" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R27" gate="G$1" x="-29.21" y="-60.96" smashed="yes" grouprefs="RF_ANT">
+<attribute name="NAME" x="-29.21" y="-59.436" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-29.21" y="-62.484" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="X_36" gate="G$1" x="-20.32" y="-63.5" smashed="yes" rot="MR0"/>
+<instance part="X_36" gate="G$1" x="-17.78" y="-76.2" smashed="yes" rot="MR0" grouprefs="RF_ANT"/>
 <instance part="TP2" gate="G$1" x="30.48" y="10.16" smashed="yes">
 <attribute name="NAME" x="29.21" y="11.43" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="31.75" y="8.89" size="1.778" layer="97"/>
+</instance>
+<instance part="D4" gate="G$1" x="114.3" y="-10.16" smashed="yes"/>
+<instance part="X_37" gate="G$1" x="114.3" y="-15.24" smashed="yes" rot="MR0"/>
+<instance part="R28" gate="G$1" x="114.3" y="-2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.776" y="-2.54" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="115.824" y="-2.54" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="TP3" gate="G$1" x="139.7" y="123.19" smashed="yes" rot="R90">
+<attribute name="NAME" x="139.7" y="123.19" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="140.97" y="124.46" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP4" gate="G$1" x="134.62" y="113.03" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.62" y="113.03" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="135.89" y="114.3" size="1.778" layer="97" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10832,52 +10922,52 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="MODEM_POWER" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
-<wire x1="109.22" y1="36.83" x2="111.76" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="111.76" y="36.83" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="26.67" x2="106.68" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="106.68" y="26.67" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_VDD"/>
-<wire x1="109.22" y1="31.75" x2="127" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="127" y1="31.75" x2="134.62" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="134.62" y1="31.75" x2="134.62" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="134.62" y1="41.91" x2="175.26" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="175.26" y1="41.91" x2="175.26" y2="34.29" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="21.59" x2="121.92" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="121.92" y1="21.59" x2="129.54" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="129.54" y1="21.59" x2="129.54" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="129.54" y1="31.75" x2="170.18" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="170.18" y1="31.75" x2="170.18" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="VCC"/>
-<wire x1="175.26" y1="34.29" x2="170.18" y2="34.29" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="175.26" y1="41.91" x2="180.34" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="175.26" y="41.91" grouprefs="SIM7000"/>
+<wire x1="170.18" y1="24.13" x2="165.1" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="170.18" y1="31.75" x2="175.26" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="170.18" y="31.75" grouprefs="SIM7000"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="127" y1="31.75" x2="127" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="127" y="31.75" grouprefs="SIM7000"/>
-<wire x1="127" y1="1.27" x2="157.48" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="121.92" y1="21.59" x2="121.92" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="121.92" y="21.59" grouprefs="SIM7000"/>
+<wire x1="121.92" y1="-8.89" x2="152.4" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U$1" gate="G$1" pin="P$5"/>
-<wire x1="157.48" y1="1.27" x2="157.48" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="152.4" y1="-8.89" x2="152.4" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_DATA"/>
-<wire x1="109.22" y1="19.05" x2="144.78" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="144.78" y1="19.05" x2="144.78" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="144.78" y1="8.89" x2="162.56" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="162.56" y1="8.89" x2="185.42" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="185.42" y1="8.89" x2="185.42" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="185.42" y1="24.13" x2="170.18" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="8.89" x2="139.7" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="139.7" y1="8.89" x2="139.7" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="139.7" y1="-1.27" x2="157.48" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="157.48" y1="-1.27" x2="180.34" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="180.34" y1="-1.27" x2="180.34" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="180.34" y1="13.97" x2="165.1" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="I/O"/>
-<wire x1="162.56" y1="8.89" x2="162.56" y2="-19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="162.56" y="8.89" grouprefs="SIM7000"/>
+<wire x1="157.48" y1="-1.27" x2="157.48" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="157.48" y="-1.27" grouprefs="SIM7000"/>
 <pinref part="U$1" gate="G$1" pin="P$4"/>
-<wire x1="162.56" y1="-19.05" x2="157.48" y2="-19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="157.48" y1="-29.21" x2="152.4" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<wire x1="27.94" y1="21.59" x2="27.94" y2="29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="22.86" y1="11.43" x2="22.86" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="U1" gate="G$1" pin="USB_VBUS"/>
-<wire x1="58.42" y1="21.59" x2="27.94" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="11.43" x2="22.86" y2="11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="IN1"/>
@@ -10891,6 +10981,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-36.83" y1="171.45" x2="-36.83" y2="176.53" width="0.1524" layer="91" grouprefs="USB"/>
 <junction x="-36.83" y="171.45" grouprefs="USB"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="24"/>
+<wire x1="55.88" y1="-87.63" x2="55.88" y2="-90.17" width="0.1524" layer="91"/>
+<label x="55.88" y="-90.17" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="USB1_D-" class="0">
@@ -10926,8 +11021,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="MODEM_D+" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DP"/>
-<wire x1="58.42" y1="19.05" x2="53.34" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="53.34" y="19.05" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="8.89" x2="48.26" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="48.26" y="8.89" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <wire x1="-22.86" y1="101.6" x2="-25.4" y2="101.6" width="0.1524" layer="91" grouprefs="USB"/>
@@ -10938,8 +11033,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="MODEM_D-" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="USB_DM"/>
-<wire x1="58.42" y1="16.51" x2="53.34" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="53.34" y="16.51" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="6.35" x2="48.26" y2="6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="48.26" y="6.35" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <wire x1="-22.86" y1="104.14" x2="-25.4" y2="104.14" width="0.1524" layer="91" grouprefs="USB"/>
@@ -10950,66 +11045,66 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="NRESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!NRESET"/>
-<wire x1="58.42" y1="24.13" x2="53.34" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="53.34" y="24.13" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="13.97" x2="48.26" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="48.26" y="13.97" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="RST"/>
 <pinref part="U1" gate="G$1" pin="SIM_CLK"/>
-<wire x1="109.22" y1="26.67" x2="124.46" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="124.46" y1="26.67" x2="144.78" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="124.46" y1="26.67" x2="124.46" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="124.46" y="26.67" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="16.51" x2="119.38" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="119.38" y1="16.51" x2="139.7" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="119.38" y1="16.51" x2="119.38" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="119.38" y="16.51" grouprefs="SIM7000"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="-3.81" x2="127" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="119.38" y1="-13.97" x2="121.92" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="CLK"/>
 <pinref part="U1" gate="G$1" pin="SIM_RST"/>
-<wire x1="144.78" y1="24.13" x2="121.92" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="139.7" y1="13.97" x2="116.84" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
-<wire x1="121.92" y1="24.13" x2="109.22" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="121.92" y1="24.13" x2="121.92" y2="-19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="121.92" y1="-19.05" x2="127" y2="-19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="121.92" y="24.13" grouprefs="SIM7000"/>
+<wire x1="116.84" y1="13.97" x2="104.14" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="116.84" y1="13.97" x2="116.84" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="116.84" y1="-29.21" x2="121.92" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="116.84" y="13.97" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="109.22" y1="-21.59" x2="111.76" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="-31.75" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_8" gate="G$1" pin="0"/>
-<wire x1="111.76" y1="-26.67" x2="111.76" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="106.68" y1="-36.83" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="127" y1="-11.43" x2="119.38" y2="-11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="119.38" y1="-11.43" x2="119.38" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="119.38" y1="-21.59" x2="111.76" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="111.76" y="-21.59" grouprefs="SIM7000"/>
-<label x="111.76" y="-24.13" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
+<wire x1="121.92" y1="-21.59" x2="114.3" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="114.3" y1="-21.59" x2="114.3" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="114.3" y1="-31.75" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="106.68" y="-31.75" grouprefs="SIM7000"/>
+<label x="106.68" y="-34.29" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="15"/>
-<wire x1="30.48" y1="-110.49" x2="30.48" y2="-107.95" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="30.48" y="-107.95" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="66.04" y1="-72.39" x2="66.04" y2="-69.85" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="66.04" y="-69.85" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
-<wire x1="-33.02" y1="8.89" x2="-43.18" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-43.18" y1="8.89" x2="-45.72" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-45.72" y1="8.89" x2="-45.72" y2="6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-43.18" y1="8.89" x2="-43.18" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-43.18" y="8.89" grouprefs="SIM7000"/>
-<wire x1="-43.18" y1="21.59" x2="-45.72" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-38.1" y1="-1.27" x2="-48.26" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="-1.27" x2="-50.8" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-50.8" y1="-1.27" x2="-50.8" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="-1.27" x2="-48.26" y2="11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-48.26" y="-1.27" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="11.43" x2="-50.8" y2="11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_19" gate="G$1" pin="0"/>
-<wire x1="-45.72" y1="21.59" x2="-45.72" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="-45.72" y="21.59" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+<wire x1="-50.8" y1="11.43" x2="-50.8" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="-50.8" y="11.43" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="21.59" x2="-38.1" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-43.18" y="21.59" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="11.43" x2="-43.18" y2="11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-48.26" y="11.43" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="GND"/>
@@ -11021,8 +11116,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="J1[SIMCARD]" gate="G$1" pin="GND"/>
-<wire x1="170.18" y1="16.51" x2="175.26" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="175.26" y1="16.51" x2="175.26" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="165.1" y1="6.35" x2="170.18" y2="6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="170.18" y1="6.35" x2="170.18" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -11031,34 +11126,34 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="SV2" gate="G$1" pin="15"/>
-<wire x1="99.06" y1="-113.03" x2="99.06" y2="-91.44" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="134.62" y1="-74.93" x2="134.62" y2="-53.34" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
 <pinref part="X_18" gate="G$1" pin="0"/>
 </segment>
 <segment>
 <pinref part="T2" gate="G$1" pin="E"/>
 <pinref part="X_20" gate="G$1" pin="0"/>
-<wire x1="17.78" y1="31.75" x2="17.78" y2="34.29" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="12.7" y1="21.59" x2="12.7" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="34.29" x2="17.78" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="17.78" y="34.29" grouprefs="SIM7000"/>
+<wire x1="12.7" y1="24.13" x2="12.7" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="12.7" y="24.13" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="X_21" gate="G$1" pin="0"/>
-<wire x1="45.72" y1="29.21" x2="45.72" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="40.64" y1="19.05" x2="40.64" y2="21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="31.75" x2="45.72" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="45.72" y="31.75" grouprefs="SIM7000"/>
+<wire x1="40.64" y1="21.59" x2="40.64" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="40.64" y="21.59" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="X_26" gate="G$1" pin="0"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-11.43" x2="38.1" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="33.02" y1="-21.59" x2="33.02" y2="-24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U3" gate="A" pin="GND"/>
-<wire x1="38.1" y1="-13.97" x2="38.1" y2="-16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="33.02" y1="-6.35" x2="33.02" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="33.02" y1="-13.97" x2="38.1" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="38.1" y="-13.97" grouprefs="SIM7000"/>
+<wire x1="33.02" y1="-24.13" x2="33.02" y2="-26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="27.94" y1="-16.51" x2="27.94" y2="-24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="27.94" y1="-24.13" x2="33.02" y2="-24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="33.02" y="-24.13" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="X_27" gate="G$1" pin="0"/>
@@ -11076,12 +11171,12 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="J2" gate="A" pin="3"/>
-<wire x1="-49.53" y1="-45.72" x2="-46.99" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-46.99" y1="-45.72" x2="-46.99" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-46.99" y1="-58.42" x2="-44.45" y2="-58.42" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-44.45" y1="-58.42" x2="-44.45" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="J2" gate="A" pin="1"/>
-<wire x1="-46.99" y1="-50.8" x2="-49.53" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-46.99" y1="-50.8" x2="-46.99" y2="-54.61" width="0.1524" layer="91"/>
-<junction x="-46.99" y="-50.8"/>
+<wire x1="-44.45" y1="-63.5" x2="-46.99" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-44.45" y1="-63.5" x2="-44.45" y2="-67.31" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<junction x="-44.45" y="-63.5" grouprefs="RF_ANT"/>
 <pinref part="X_28" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -11121,14 +11216,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="158.75" x2="119.38" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="111.76" y1="158.75" x2="111.76" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="156.21" y1="158.75" x2="156.21" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
-<wire x1="119.38" y1="156.21" x2="139.7" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="148.59" y1="158.75" x2="148.59" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="111.76" y1="156.21" x2="132.08" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
 <pinref part="X_33" gate="G$1" pin="0"/>
-<wire x1="139.7" y1="156.21" x2="156.21" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
-<wire x1="139.7" y1="149.86" x2="139.7" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
-<junction x="139.7" y="156.21" grouprefs="USB"/>
+<wire x1="132.08" y1="156.21" x2="148.59" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="132.08" y1="149.86" x2="132.08" y2="156.21" width="0.1524" layer="91" grouprefs="USB"/>
+<junction x="132.08" y="156.21" grouprefs="USB"/>
 </segment>
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -11150,50 +11245,54 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-26.67" y1="-59.69" x2="-26.67" y2="-62.23" width="0.1524" layer="91"/>
-<wire x1="-26.67" y1="-62.23" x2="-20.32" y2="-62.23" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="-72.39" x2="-24.13" y2="-74.93" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-24.13" y1="-74.93" x2="-17.78" y2="-74.93" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="-62.23" x2="-13.97" y2="-62.23" width="0.1524" layer="91"/>
-<wire x1="-13.97" y1="-62.23" x2="-13.97" y2="-59.69" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-62.23" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-20.32" y="-62.23"/>
+<wire x1="-17.78" y1="-74.93" x2="-11.43" y2="-74.93" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-11.43" y1="-74.93" x2="-11.43" y2="-72.39" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-17.78" y1="-74.93" x2="-17.78" y2="-76.2" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<junction x="-17.78" y="-74.93" grouprefs="RF_ANT"/>
 <pinref part="X_36" gate="G$1" pin="0"/>
-<label x="-13.97" y="-62.23" size="1.778" layer="95" xref="yes"/>
+<label x="-11.43" y="-74.93" size="1.778" layer="95" xref="yes" grouprefs="RF_ANT"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="X_37" gate="G$1" pin="0"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="-30.48" y1="6.35" x2="-43.18" y2="6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-43.18" y1="6.35" x2="-43.18" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-35.56" y1="-3.81" x2="-48.26" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="-3.81" x2="-48.26" y2="-6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-3" pin="S"/>
-<wire x1="-43.18" y1="3.81" x2="-45.72" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-30.48" y1="6.35" x2="-30.48" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-48.26" y1="-6.35" x2="-50.8" y2="-6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-35.56" y1="-3.81" x2="-35.56" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U3" gate="A" pin="SDA2"/>
-<wire x1="-30.48" y1="1.27" x2="-27.94" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-35.56" y1="-8.89" x2="-33.02" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="PWRKEY" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="-113.03" x2="114.3" y2="-109.22" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="114.3" y="-109.22" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="149.86" y1="-74.93" x2="149.86" y2="-71.12" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="149.86" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRKEY"/>
-<wire x1="58.42" y1="26.67" x2="55.88" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="16.51" x2="50.8" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="T1" gate="G$1" pin="C"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="46.99" x2="50.8" y2="46.99" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="50.8" y1="46.99" x2="55.88" y2="46.99" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="50.8" y="46.99" grouprefs="SIM7000"/>
-<wire x1="55.88" y1="46.99" x2="55.88" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="55.88" y="46.99" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+<wire x1="40.64" y1="36.83" x2="45.72" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="45.72" y1="36.83" x2="50.8" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="45.72" y="36.83" grouprefs="SIM7000"/>
+<wire x1="50.8" y1="36.83" x2="50.8" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="50.8" y="36.83" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="BOOT_CFG"/>
-<wire x1="50.8" y1="-8.89" x2="58.42" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="45.72" y1="-19.05" x2="53.34" y2="-19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 </segment>
 </net>
@@ -11224,8 +11323,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="11"/>
-<wire x1="35.56" y1="-110.49" x2="35.56" y2="-107.95" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="35.56" y="-107.95" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="71.12" y1="-72.39" x2="71.12" y2="-69.85" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="71.12" y="-69.85" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="DM0" class="0">
@@ -11236,15 +11335,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="9"/>
-<label x="38.1" y="-107.95" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
-<wire x1="38.1" y1="-110.49" x2="38.1" y2="-107.95" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="73.66" y="-69.85" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="73.66" y1="-72.39" x2="73.66" y2="-69.85" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="14"/>
-<wire x1="33.02" y1="-125.73" x2="33.02" y2="-129.54" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="33.02" y="-129.54" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="68.58" y1="-87.63" x2="68.58" y2="-91.44" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="68.58" y="-91.44" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VCC"/>
@@ -11262,19 +11361,19 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-25.4" y="124.46" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
 </segment>
 <segment>
-<wire x1="-38.1" y1="3.81" x2="-40.64" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-40.64" y1="3.81" x2="-40.64" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-43.18" y1="-6.35" x2="-45.72" y2="-6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-45.72" y1="-6.35" x2="-45.72" y2="-11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-40.64" y1="-1.27" x2="-45.72" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="-38.1" y="11.43" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
-<wire x1="-38.1" y1="13.97" x2="-38.1" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-40.64" y1="-1.27" x2="-40.64" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-40.64" y="-1.27" grouprefs="SIM7000"/>
+<wire x1="-45.72" y1="-11.43" x2="-50.8" y2="-11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="-43.18" y="1.27" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
+<wire x1="-43.18" y1="3.81" x2="-43.18" y2="-6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-45.72" y1="-11.43" x2="-45.72" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-45.72" y="-11.43" grouprefs="SIM7000"/>
 <pinref part="U3" gate="A" pin="EN"/>
 <pinref part="U3" gate="A" pin="VREF2"/>
-<wire x1="-27.94" y1="-6.35" x2="-27.94" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-40.64" y1="-3.81" x2="-27.94" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-27.94" y="-3.81" grouprefs="SIM7000"/>
+<wire x1="-33.02" y1="-16.51" x2="-33.02" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-45.72" y1="-13.97" x2="-33.02" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-33.02" y="-13.97" grouprefs="SIM7000"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -11282,94 +11381,92 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-26.67" y1="139.7" x2="-26.67" y2="142.24" width="0.1524" layer="91" grouprefs="USB"/>
 <label x="-26.67" y="142.24" size="1.778" layer="95" xref="yes" grouprefs="USB"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="31.75" x2="20.32" y2="39.37" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="20.32" y="39.37" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+</segment>
 </net>
 <net name="VDD_EXT" class="0">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
-<wire x1="17.78" y1="46.99" x2="17.78" y2="54.61" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="17.78" y1="54.61" x2="7.62" y2="54.61" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="12.7" y1="36.83" x2="12.7" y2="44.45" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="12.7" y1="44.45" x2="2.54" y2="44.45" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U1" gate="G$1" pin="DTR"/>
-<wire x1="58.42" y1="13.97" x2="35.56" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="35.56" y1="13.97" x2="35.56" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="35.56" y1="19.05" x2="22.86" y2="19.05" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="22.86" y1="19.05" x2="22.86" y2="46.99" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="22.86" y1="46.99" x2="17.78" y2="46.99" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="17.78" y="46.99" grouprefs="SIM7000"/>
-<label x="7.62" y="54.61" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="3.81" x2="30.48" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="30.48" y1="3.81" x2="30.48" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="30.48" y1="8.89" x2="17.78" y2="8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="17.78" y1="8.89" x2="17.78" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="17.78" y1="36.83" x2="12.7" y2="36.83" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="12.7" y="36.83" grouprefs="SIM7000"/>
+<label x="2.54" y="44.45" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="41.91" x2="7.62" y2="34.29" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="2.54" y1="31.75" x2="2.54" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="T2" gate="G$1" pin="B"/>
-<wire x1="7.62" y1="41.91" x2="12.7" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="7.62" y="41.91" grouprefs="SIM7000"/>
+<wire x1="2.54" y1="31.75" x2="7.62" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="2.54" y="31.75" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="SLEEP" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="41.91" x2="-10.16" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="-10.16" y="41.91" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="-7.62" y1="31.75" x2="-15.24" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="-15.24" y="31.75" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="-128.27" x2="116.84" y2="-116.84" width="0.1524" layer="91"/>
-<label x="116.84" y="-116.84" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="PWR" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="41.91" x2="25.4" y2="49.53" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="25.4" y="49.53" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+<wire x1="152.4" y1="-90.17" x2="152.4" y2="-93.98" width="0.1524" layer="91"/>
+<label x="152.4" y="-93.98" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="31.75" x2="35.56" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="30.48" y1="21.59" x2="30.48" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="T1" gate="G$1" pin="B"/>
-<wire x1="35.56" y1="41.91" x2="40.64" y2="41.91" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="35.56" y="41.91" grouprefs="SIM7000"/>
+<wire x1="30.48" y1="31.75" x2="35.56" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="30.48" y="31.75" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="11"/>
-<wire x1="104.14" y1="-113.03" x2="104.14" y2="-109.22" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="104.14" y="-109.22" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="139.7" y1="-74.93" x2="139.7" y2="-71.12" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="139.7" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="I2C1_SCL" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="9"/>
-<wire x1="106.68" y1="-113.03" x2="106.68" y2="-109.22" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="106.68" y="-109.22" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="142.24" y1="-74.93" x2="142.24" y2="-71.12" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="142.24" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="6"/>
-<wire x1="111.76" y1="-128.27" x2="111.76" y2="-132.08" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="111.76" y="-132.08" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="147.32" y1="-90.17" x2="147.32" y2="-93.98" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="147.32" y="-93.98" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="LED2" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="8"/>
-<wire x1="109.22" y1="-128.27" x2="109.22" y2="-132.08" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="109.22" y="-132.08" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="144.78" y1="-90.17" x2="144.78" y2="-93.98" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="144.78" y="-93.98" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="LED3" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="10"/>
-<wire x1="106.68" y1="-128.27" x2="106.68" y2="-132.08" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="106.68" y="-132.08" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="142.24" y1="-90.17" x2="142.24" y2="-93.98" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="142.24" y="-93.98" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="USB2_D-" class="0">
@@ -11442,17 +11539,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="PRE_ANT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RF_ANT"/>
-<wire x1="58.42" y1="-6.35" x2="57.15" y2="-6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="57.15" y="-6.35" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="-16.51" x2="52.07" y2="-16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="52.07" y="-16.51" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="-48.26" x2="-13.97" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-13.97" y1="-48.26" x2="-13.97" y2="-52.07" width="0.1524" layer="91"/>
-<wire x1="-13.97" y1="-48.26" x2="-10.16" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-13.97" y="-48.26"/>
-<label x="-11.43" y="-48.26" size="1.778" layer="95" xref="yes"/>
+<wire x1="-12.7" y1="-60.96" x2="-11.43" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-11.43" y1="-60.96" x2="-11.43" y2="-64.77" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-11.43" y1="-60.96" x2="-7.62" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<junction x="-11.43" y="-60.96" grouprefs="RF_ANT"/>
+<label x="-8.89" y="-60.96" size="1.778" layer="95" xref="yes" grouprefs="RF_ANT"/>
 </segment>
 </net>
 <net name="PWRON1" class="0">
@@ -11524,8 +11621,12 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="5"/>
-<wire x1="138.43" y1="109.22" x2="143.51" y2="109.22" width="0.1524" layer="91" grouprefs="USB"/>
-<label x="138.43" y="109.22" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
+<wire x1="133.35" y1="109.22" x2="137.16" y2="109.22" width="0.1524" layer="91" grouprefs="USB"/>
+<label x="133.35" y="109.22" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="137.16" y1="109.22" x2="143.51" y2="109.22" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="137.16" y1="113.03" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
+<junction x="137.16" y="109.22"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
@@ -11543,8 +11644,12 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="1"/>
-<wire x1="143.51" y1="119.38" x2="138.43" y2="119.38" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="143.51" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91" grouprefs="USB"/>
 <label x="138.43" y="119.38" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<wire x1="139.7" y1="119.38" x2="138.43" y2="119.38" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="142.24" y1="123.19" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWRON3" class="0">
@@ -11600,8 +11705,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="175.26" x2="180.34" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<label x="180.34" y="175.26" size="1.778" layer="95" xref="yes" grouprefs="USB"/>
+<wire x1="167.64" y1="175.26" x2="172.72" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<label x="172.72" y="175.26" size="1.778" layer="95" xref="yes" grouprefs="USB"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -11612,13 +11717,13 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="CR1" gate="A" pin="1"/>
-<wire x1="134.62" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="127" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="175.26" x2="118.11" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<wire x1="119.38" y1="166.37" x2="119.38" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<junction x="119.38" y="175.26" grouprefs="USB"/>
-<wire x1="119.38" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<label x="116.84" y="175.26" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
+<wire x1="111.76" y1="175.26" x2="110.49" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="111.76" y1="166.37" x2="111.76" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<junction x="111.76" y="175.26" grouprefs="USB"/>
+<wire x1="111.76" y1="175.26" x2="109.22" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<label x="109.22" y="175.26" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -11636,61 +11741,61 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="PB2" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="17"/>
-<wire x1="96.52" y1="-113.03" x2="96.52" y2="-109.22" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="96.52" y="-109.22" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="132.08" y1="-74.93" x2="132.08" y2="-71.12" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="132.08" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="PB3" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="19"/>
-<wire x1="93.98" y1="-113.03" x2="93.98" y2="-109.22" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
-<label x="93.98" y="-109.22" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
+<wire x1="129.54" y1="-74.93" x2="129.54" y2="-71.12" width="0.1524" layer="91" grouprefs="POCKETBEAGLE_PINS"/>
+<label x="129.54" y="-71.12" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="POCKETBEAGLE_PINS"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD_EXT"/>
-<wire x1="109.22" y1="34.29" x2="116.84" y2="34.29" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="116.84" y="34.29" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+<wire x1="104.14" y1="24.13" x2="111.76" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="111.76" y="24.13" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="VREF1"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="-3.81" x2="38.1" y2="-3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<label x="38.1" y="-3.81" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
+<wire x1="27.94" y1="-13.97" x2="33.02" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<label x="33.02" y="-13.97" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="-45.72" y1="1.27" x2="-33.02" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-50.8" y1="-8.89" x2="-38.1" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="U3" gate="A" pin="SCL2"/>
-<wire x1="-27.94" y1="-1.27" x2="-33.02" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-33.02" y1="-1.27" x2="-33.02" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-33.02" y1="-11.43" x2="-38.1" y2="-11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-38.1" y1="-11.43" x2="-38.1" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
 <pinref part="U3" gate="A" pin="SCL1"/>
-<wire x1="58.42" y1="-1.27" x2="33.02" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="-11.43" x2="27.94" y2="-11.43" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
 <pinref part="U3" gate="A" pin="SDA1"/>
-<wire x1="58.42" y1="1.27" x2="33.02" y2="1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="53.34" y1="-8.89" x2="27.94" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="CR1" gate="A" pin="2"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="175.26" x2="156.21" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<wire x1="156.21" y1="175.26" x2="156.21" y2="166.37" width="0.1524" layer="91" grouprefs="USB"/>
-<wire x1="144.78" y1="175.26" x2="156.21" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
-<junction x="156.21" y="175.26" grouprefs="USB"/>
+<wire x1="157.48" y1="175.26" x2="148.59" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="148.59" y1="175.26" x2="148.59" y2="166.37" width="0.1524" layer="91" grouprefs="USB"/>
+<wire x1="137.16" y1="175.26" x2="148.59" y2="175.26" width="0.1524" layer="91" grouprefs="USB"/>
+<junction x="148.59" y="175.26" grouprefs="USB"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -11698,27 +11803,57 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="-26.67" y1="-52.07" x2="-26.67" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-26.67" y1="-48.26" x2="-25.4" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="-64.77" x2="-24.13" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-24.13" y1="-60.96" x2="-22.86" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="R27" gate="G$1" pin="2"/>
-<junction x="-26.67" y="-48.26"/>
+<junction x="-24.13" y="-60.96" grouprefs="RF_ANT"/>
 </segment>
 </net>
 <net name="RF_ANT" class="0">
 <segment>
 <pinref part="J2" gate="A" pin="2"/>
-<label x="-44.45" y="-48.26" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="-41.91" y="-60.96" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="RF_ANT"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="-49.53" y1="-48.26" x2="-36.83" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-46.99" y1="-60.96" x2="-34.29" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GNSS_ANT"/>
-<wire x1="58.42" y1="-3.81" x2="49.53" y2="-3.81" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="30.48" y1="7.62" x2="49.53" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="49.53" y1="7.62" x2="49.53" y2="-3.81" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="7.62" x2="52.07" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="7.62" x2="52.07" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-13.97" x2="52.07" y2="-13.97" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="NETLIGHT"/>
+<wire x1="104.14" y1="-8.89" x2="111.76" y2="-8.89" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-8.89" x2="111.76" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="2.54" x2="114.3" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="1.27" x2="111.76" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="I2C2_SDA" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="26"/>
+<wire x1="53.34" y1="-87.63" x2="53.34" y2="-90.17" width="0.1524" layer="91"/>
+<label x="53.34" y="-90.17" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="I2C2_SCL" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="28"/>
+<wire x1="50.8" y1="-87.63" x2="50.8" y2="-90.17" width="0.1524" layer="91"/>
+<label x="50.8" y="-90.17" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -11772,6 +11907,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="X_22" gate="G$1" x="162.56" y="68.58" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="C7" gate="G$1" x="172.72" y="86.36" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_23" gate="G$1" x="175.26" y="86.36" smashed="yes" rot="MR270" grouprefs="GROVE"/>
+<instance part="TP5" gate="G$1" x="132.08" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.62" y="39.37" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="133.35" y="38.1" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP6" gate="G$1" x="30.48" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="39.37" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="31.75" y="38.1" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11876,13 +12019,18 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
 <wire x1="17.78" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="25.4" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="25.4" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="33.02" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="2.54" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="17.78" y="33.02" grouprefs="POWER"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="25.4" y="33.02" grouprefs="POWER"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="2.54" y1="33.02" x2="2.54" y2="35.56" width="0.1524" layer="91" grouprefs="POWER"/>
+<label x="5.08" y="38.1" size="1.778" layer="95" xref="yes"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="36.83" width="0.1524" layer="91"/>
+<junction x="33.02" y="33.02"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -11939,14 +12087,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
-<wire x1="162.56" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<wire x1="154.94" y1="73.66" x2="154.94" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
-<label x="154.94" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
-</segment>
-</net>
 <net name="I2C2_SDA" class="0">
 <segment>
 <pinref part="J4[GROVE]" gate="G$1" pin="2"/>
@@ -11961,14 +12101,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="133.35" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="129.54" y1="86.36" x2="129.54" y2="76.2" width="0.1524" layer="91" grouprefs="GROVE"/>
 <label x="129.54" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="GROVE1" gate="G$1" pin="3"/>
-<wire x1="133.35" y1="73.66" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<wire x1="125.73" y1="86.36" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
-<label x="125.73" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
 </segment>
 </net>
 <net name="I2C1_SCL" class="0">
@@ -12029,13 +12161,31 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="99.06" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="114.3" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="114.3" y="33.02" grouprefs="POWER"/>
-<wire x1="127" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="127" y1="33.02" x2="134.62" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="127" y="33.02" grouprefs="POWER"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <junction x="83.82" y="33.02" grouprefs="POWER"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <junction x="99.06" y="33.02" grouprefs="POWER"/>
 <label x="139.7" y="33.02" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="134.62" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="134.62" y1="36.83" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
+<junction x="134.62" y="33.02"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="GROVE1" gate="G$1" pin="3"/>
+<wire x1="133.35" y1="73.66" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="125.73" y1="86.36" x2="125.73" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<label x="125.73" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
+</segment>
+<segment>
+<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
+<wire x1="162.56" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
+<wire x1="154.94" y1="73.66" x2="154.94" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
+<label x="154.94" y="86.36" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="GROVE"/>
 </segment>
 </net>
 </nets>
