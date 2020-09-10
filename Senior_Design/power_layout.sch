@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2888,6 +2888,15 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="HPC0201" urn="urn:adsk.eagle:footprint:25783/1" library_version="11">
+<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPC1005X60" urn="urn:adsk.eagle:package:23626/2" type="model" library_version="11">
@@ -3418,6 +3427,13 @@ Source: AVX .. aphvc.pdf</description>
 <packageinstance name="C01005"/>
 </packageinstances>
 </package3d>
+<package3d name="HPC0201" urn="urn:adsk.eagle:package:26213/1" type="box" library_version="11">
+<description> 
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<packageinstances>
+<packageinstance name="HPC0201"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="C-US" urn="urn:adsk.eagle:symbol:23201/1" library_version="11">
@@ -3427,6 +3443,16 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
 <text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="C-EU" urn="urn:adsk.eagle:symbol:23120/1" library_version="11">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
@@ -4604,6 +4630,1205 @@ Source: AVX .. aphvc.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/46" prefix="C" uservalue="yes" library_version="11">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="C0402" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="18" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0504" package="C0504">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0603" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23616/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="73" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0805" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1206" package="C1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23618/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="54" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1210" package="C1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23619/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1310" package="C1310">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1608" package="C1608">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23621/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1812" package="C1812">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23622/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1825" package="C1825">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23623/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C2012" package="C2012">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23625/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C3216" package="C3216">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23628/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C3225" package="C3225">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23655/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C4532" package="C4532">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23627/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C4564" package="C4564">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23648/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-024X044" package="C025-024X044">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23630/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="56" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-025X050" package="C025-025X050">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23629/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="65" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-030X050" package="C025-030X050">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23631/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="14" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-040X050" package="C025-040X050">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23634/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-050X050" package="C025-050X050">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23633/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="16" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025-060X050" package="C025-060X050">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23632/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C025_050-024X070" package="C025_050-024X070">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23639/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025_050-025X075" package="C025_050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23641/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025_050-035X075" package="C025_050-035X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23651/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025_050-045X075" package="C025_050-045X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23635/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="025_050-055X075" package="C025_050-055X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23636/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-024X044" package="C050-024X044">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23643/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="33" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-025X075" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23637/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="29" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-045X075" package="C050-045X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23638/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-030X075" package="C050-030X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23640/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-050X075" package="C050-050X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23665/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-055X075" package="C050-055X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23642/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-075X075" package="C050-075X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23645/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050H075X075" package="C050H075X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23644/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="075-032X103" package="C075-032X103">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23646/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="075-042X103" package="C075-042X103">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23656/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="075-052X106" package="C075-052X106">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="102-043X133" package="C102-043X133">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23647/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="102-054X133" package="C102-054X133">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23649/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="102-064X133" package="C102-064X133">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23653/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="102_152-062X184" package="C102_152-062X184">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23652/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150-054X183" package="C150-054X183">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23669/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150-064X183" package="C150-064X183">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23654/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150-072X183" package="C150-072X183">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23657/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150-084X183" package="C150-084X183">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23658/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150-091X182" package="C150-091X182">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23659/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="225-062X268" package="C225-062X268">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23661/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="225-074X268" package="C225-074X268">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23660/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="225-087X268" package="C225-087X268">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23662/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="225-108X268" package="C225-108X268">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23663/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="225-113X268" package="C225-113X268">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23667/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-093X316" package="C275-093X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23701/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-113X316" package="C275-113X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23673/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-134X316" package="C275-134X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23664/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-205X316" package="C275-205X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23666/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="325-137X374" package="C325-137X374">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23672/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="325-162X374" package="C325-162X374">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23670/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="325-182X374" package="C325-182X374">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23668/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="375-192X418" package="C375-192X418">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23674/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="375-203X418" package="C375-203X418">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23671/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="050-035X075" package="C050-035X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23677/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="375-155X418" package="C375-155X418">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23675/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="075-063X106" package="C075-063X106">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23678/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-154X316" package="C275-154X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23685/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="275-173X316" package="C275-173X316">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23676/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0402K" package="C0402K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23679/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0603K" package="C0603K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23680/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="30" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0805K" package="C0805K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23681/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="52" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1206K" package="C1206K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23682/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="13" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1210K" package="C1210K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23683/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1812K" package="C1812K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23686/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1825K" package="C1825K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C2220K" package="C2220K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23687/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C2225K" package="C2225K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23692/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="HPC0201" package="HPC0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26213/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C0201" package="C0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23690/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C1808" package="C1808">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23689/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="C3640" package="C3640">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23693/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="01005" package="C01005">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23691/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7731,16 +8956,11 @@ W = angled&lt;p&gt;
 <smd name="2" x="1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
 <smd name="3" x="0" y="-1.5961" dx="1.0414" dy="1.0922" layer="1"/>
 <wire x1="0.4064" y1="1.4224" x2="-0.4064" y2="1.4224" width="0.1524" layer="21"/>
-<wire x1="-3.0734" y1="-0.1524" x2="-3.048" y2="0.3048" width="0.1524" layer="21" curve="-32"/>
 <text x="-1.7272" y="0.6604" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="-1.778" y1="-1.2954" x2="1.778" y2="-1.2954" width="0.1524" layer="51"/>
 <wire x1="1.778" y1="-1.2954" x2="1.778" y2="1.2954" width="0.1524" layer="51"/>
 <wire x1="1.778" y1="1.2954" x2="-1.778" y2="1.2954" width="0.1524" layer="51"/>
 <wire x1="-1.778" y1="1.2954" x2="-1.778" y2="-1.2954" width="0.1524" layer="51"/>
-<wire x1="-0.889" y1="2.0828" x2="-1.651" y2="2.0828" width="0.508" layer="51" curve="-180"/>
-<wire x1="-1.651" y1="2.0828" x2="-0.889" y2="2.0828" width="0.508" layer="51" curve="-180"/>
-<wire x1="-2.413" y1="0.0508" x2="-3.175" y2="0.0508" width="0.508" layer="22" curve="-180"/>
-<wire x1="-3.175" y1="0.0508" x2="-2.413" y2="0.0508" width="0.508" layer="22" curve="-180"/>
 <text x="-3.2766" y="0.6604" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="VF32_TEX">
@@ -10930,6 +12150,19 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="U3" library="Personal" deviceset="MAX3373EEKA+T" device=""/>
+<part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP21" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP22" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP23" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP24" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP25" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP26" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP27" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP28" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="J3" library="Personal" deviceset="U.FL-R-SMT-1(01)" device=""/>
+<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1608" package3d_urn="urn:adsk.eagle:package:23621/2" value="47nH"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="33pF"/>
+<part name="X_38" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10968,17 +12201,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="105.918" y="-86.36" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-14.478" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-81.788" y="-16.637" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-11.938" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-9.398" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-6.858" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="J1" gate="A" x="143.51" y="119.38" smashed="yes" grouprefs="USB">
@@ -11191,6 +12424,46 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="-4.1656" y="-23.0886" size="2.0828" layer="95" ratio="6" rot="SR180"/>
 <attribute name="VALUE" x="-8.6106" y="-23.0886" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
+<instance part="TP20" gate="G$1" x="110.49" y="-11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.49" y="-11.43" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="109.22" y="-12.7" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP21" gate="G$1" x="46.99" y="-3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.99" y="-3.81" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="48.26" y="-2.54" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP22" gate="G$1" x="46.99" y="-6.35" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.99" y="-6.35" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="48.26" y="-5.08" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP23" gate="G$1" x="80.01" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.01" y="109.22" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="78.74" y="107.95" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP24" gate="G$1" x="80.01" y="106.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.01" y="106.68" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="78.74" y="105.41" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP25" gate="G$1" x="-27.94" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="-27.94" y="121.92" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-26.67" y="123.19" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP26" gate="G$1" x="138.43" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.43" y="101.6" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="139.7" y="102.87" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="J3" gate="A" x="-48.26" y="-104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="-52.4256" y="-109.4486" size="2.0828" layer="95" ratio="6" rot="SR180"/>
+</instance>
+<instance part="L1" gate="G$1" x="-38.1" y="-93.98" smashed="yes">
+<attribute name="NAME" x="-36.576" y="-93.599" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-34.036" y="-96.139" size="1.778" layer="96"/>
+</instance>
+<instance part="C16" gate="G$1" x="-38.1" y="-101.6" smashed="yes">
+<attribute name="NAME" x="-36.576" y="-101.219" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-34.036" y="-106.299" size="1.778" layer="96"/>
+</instance>
+<instance part="X_38" gate="G$1" x="-38.1" y="-109.22" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -11200,6 +12473,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
 <wire x1="104.14" y1="26.67" x2="106.68" y2="26.67" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <label x="106.68" y="26.67" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="SIM7000"/>
+</segment>
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="-91.44" x2="-40.64" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-40.64" y="-91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -11378,10 +12656,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
-<wire x1="-77.47" y1="-5.08" x2="-80.01" y2="-5.08" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-80.01" y1="-5.08" x2="-80.01" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-77.47" y="-5.08" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-7.62" x2="-80.01" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-7.62" x2="-77.47" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-77.47" y="-7.62" grouprefs="SIM7000"/>
 <wire x1="-77.47" y1="7.62" x2="-80.01" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_19" gate="G$1" pin="0"/>
 <wire x1="-80.01" y1="7.62" x2="-80.01" y2="5.08" width="0.1524" layer="91" grouprefs="SIM7000"/>
@@ -11389,8 +12666,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="-77.47" y1="7.62" x2="-72.39" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="-77.47" y="7.62" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-5.08" x2="-54.61" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-54.61" y1="-5.08" x2="-54.61" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="-77.47" y1="-7.62" x2="-54.61" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-54.61" y1="-7.62" x2="-54.61" y2="-13.97" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="VCC"/>
 <wire x1="-54.61" y1="-13.97" x2="-52.07" y2="-13.97" width="0.1524" layer="91"/>
 </segment>
@@ -11457,16 +12734,18 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="140.97" y="101.6" grouprefs="USB"/>
 <pinref part="J1" gate="A" pin="4"/>
 <wire x1="140.97" y1="111.76" x2="143.51" y2="111.76" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP26" gate="G$1" pin="TP"/>
 </segment>
 <segment>
-<pinref part="J2" gate="A" pin="3"/>
-<wire x1="-46.99" y1="-58.42" x2="-44.45" y2="-58.42" width="0.1524" layer="91" grouprefs="RF_ANT"/>
-<wire x1="-44.45" y1="-58.42" x2="-44.45" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="J2" gate="A" pin="1"/>
-<wire x1="-44.45" y1="-63.5" x2="-46.99" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-44.45" y1="-63.5" x2="-45.72" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-45.72" y1="-63.5" x2="-46.99" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <wire x1="-44.45" y1="-63.5" x2="-44.45" y2="-67.31" width="0.1524" layer="91" grouprefs="RF_ANT"/>
-<junction x="-44.45" y="-63.5" grouprefs="RF_ANT"/>
 <pinref part="X_28" gate="G$1" pin="0"/>
+<pinref part="J2" gate="A" pin="2"/>
+<wire x1="-46.99" y1="-60.96" x2="-45.72" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-60.96" x2="-45.72" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-45.72" y="-63.5"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="GND"/>
@@ -11548,18 +12827,27 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="D4" gate="G$1" pin="C"/>
 <pinref part="X_37" gate="G$1" pin="0"/>
 </segment>
+<segment>
+<pinref part="X_38" gate="G$1" pin="0"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="-109.22" x2="-38.1" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-106.68" x2="-48.26" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-106.68"/>
+<pinref part="J3" gate="A" pin="2"/>
+<wire x1="-48.26" y1="-106.68" x2="-48.26" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="1"/>
+<wire x1="-48.26" y1="-104.14" x2="-48.26" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="-48.26" y="-104.14"/>
+<label x="-38.1" y="-109.22" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="-64.77" y1="-7.62" x2="-77.47" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-7.62" x2="-77.47" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-52.07" y1="-8.89" x2="-77.47" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-8.89" x2="-77.47" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="-77.47" y1="-10.16" x2="-80.01" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-64.77" y1="-7.62" x2="-64.77" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-64.77" y1="-12.7" x2="-57.15" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-57.15" y1="-12.7" x2="-57.15" y2="-8.89" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="IO/VL1"/>
-<wire x1="-57.15" y1="-8.89" x2="-52.07" y2="-8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWRKEY" class="0">
@@ -11652,12 +12940,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-25.4" y="124.46" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
 </segment>
 <segment>
-<wire x1="-72.39" y1="-10.16" x2="-74.93" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-74.93" y1="-10.16" x2="-74.93" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-74.93" y1="-15.24" x2="-80.01" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-72.39" y1="-15.24" x2="-80.01" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <label x="-72.39" y="-2.54" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
-<wire x1="-72.39" y1="0" x2="-72.39" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-72.39" y1="0" x2="-72.39" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -12020,12 +13306,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <pinref part="U2" gate="A" pin="DP4"/>
 <wire x1="73.66" y1="109.22" x2="77.47" y2="109.22" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP23" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="DM4"/>
 <wire x1="73.66" y1="106.68" x2="77.47" y2="106.68" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP24" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -12067,12 +13355,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="-80.01" y1="-12.7" x2="-67.31" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-67.31" y1="-15.24" x2="-67.31" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-67.31" y1="-15.24" x2="-54.61" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-54.61" y1="-15.24" x2="-54.61" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="-80.01" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-55.88" y1="-16.51" x2="-55.88" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-55.88" y1="-16.51" x2="-52.07" y2="-16.51" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="IO/VCC1"/>
-<wire x1="-54.61" y1="-16.51" x2="-52.07" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -12116,14 +13402,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-24.13" y1="-60.96" x2="-22.86" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <junction x="-24.13" y="-60.96" grouprefs="RF_ANT"/>
-</segment>
-</net>
-<net name="RF_ANT" class="0">
-<segment>
-<pinref part="J2" gate="A" pin="2"/>
-<label x="-41.91" y="-60.96" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="RF_ANT"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="-46.99" y1="-60.96" x2="-34.29" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -12175,6 +13453,52 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <pinref part="TP18" gate="G$1" pin="TP"/>
 <pinref part="U1" gate="G$1" pin="I2C_SDA"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="CTS"/>
+<wire x1="53.34" y1="-3.81" x2="49.53" y2="-3.81" width="0.1524" layer="91"/>
+<pinref part="TP21" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RTS"/>
+<wire x1="53.34" y1="-6.35" x2="49.53" y2="-6.35" width="0.1524" layer="91"/>
+<pinref part="TP22" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="STATUS"/>
+<wire x1="104.14" y1="-11.43" x2="107.95" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="TP20" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="!RESET"/>
+<pinref part="TP25" gate="G$1" pin="TP"/>
+<wire x1="-22.86" y1="121.92" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-34.29" y1="-60.96" x2="-40.64" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-60.96" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="-40.64" y1="-58.42" x2="-46.99" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="3"/>
+<wire x1="-48.26" y1="-99.06" x2="-38.1" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<junction x="-38.1" y="-99.06"/>
 </segment>
 </net>
 </nets>
@@ -12260,6 +13584,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="165.1" y="92.71" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="166.37" y="88.9" size="1.778" layer="97" rot="R270"/>
 </instance>
+<instance part="TP27" gate="G$1" x="130.81" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="132.08" y="72.39" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP28" gate="G$1" x="166.37" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="166.37" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="167.64" y="72.39" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12329,6 +13661,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="GROVE1" gate="G$1" pin="4"/>
 <wire x1="133.35" y1="71.12" x2="133.35" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_14" gate="G$1" pin="0"/>
+<pinref part="TP27" gate="G$1" pin="TP"/>
+<junction x="133.35" y="71.12"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -12338,6 +13672,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="J4[GROVE]" gate="G$1" pin="4"/>
 <wire x1="168.91" y1="71.12" x2="168.91" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_22" gate="G$1" pin="0"/>
+<pinref part="TP28" gate="G$1" pin="TP"/>
+<junction x="168.91" y="71.12"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
