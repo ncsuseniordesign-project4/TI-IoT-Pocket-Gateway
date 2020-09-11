@@ -159,14 +159,14 @@
 <board>
 <plain>
 <wire x1="0" y1="10" x2="10" y2="0" width="0.1" layer="20" curve="90"/>
-<wire x1="113.1406" y1="9.8984" x2="113.1406" y2="24.8984" width="0.1" layer="20"/>
+<wire x1="108.1622" y1="9.9746" x2="108.1622" y2="24.9746" width="0.1" layer="20"/>
 <wire x1="0" y1="25" x2="10" y2="35" width="0.1" layer="20" curve="-90"/>
 <wire x1="0" y1="25" x2="0" y2="10" width="0.1" layer="20"/>
-<wire x1="10" y1="0" x2="103.1406" y2="-0.1016" width="0.1" layer="20"/>
-<wire x1="103.1406" y1="34.8984" x2="10" y2="35" width="0.1" layer="20"/>
-<wire x1="113.1406" y1="24.8984" x2="103.1406" y2="34.8984" width="0.1" layer="20" curve="90"/>
+<wire x1="10" y1="0" x2="98.1622" y2="-0.0254" width="0.1" layer="20"/>
+<wire x1="98.1622" y1="34.9746" x2="10" y2="35" width="0.1" layer="20"/>
+<wire x1="108.1622" y1="24.9746" x2="98.1622" y2="34.9746" width="0.1" layer="20" curve="90"/>
 <wire x1="10" y1="35" x2="0" y2="25" width="0.1" layer="20" curve="90"/>
-<wire x1="103.1406" y1="-0.1016" x2="113.1406" y2="9.8984" width="0.1" layer="20" curve="90"/>
+<wire x1="98.1622" y1="-0.0254" x2="108.1622" y2="9.9746" width="0.1" layer="20" curve="90"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1250,6 +1250,34 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="C1608" urn="urn:adsk.eagle:footprint:23128/1" library_version="11">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="C0603K" urn="urn:adsk.eagle:footprint:23187/1" library_version="11">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 1608</description>
+<wire x1="-0.725" y1="0.35" x2="0.725" y2="0.35" width="0.1016" layer="51"/>
+<wire x1="0.725" y1="-0.35" x2="-0.725" y2="-0.35" width="0.1016" layer="51"/>
+<smd name="1" x="-0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
+<smd name="2" x="0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
+<text x="-0.8" y="0.65" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.8" y="-1.65" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.45" y2="0.4" layer="51"/>
+<rectangle x1="0.45" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="11">
@@ -1262,6 +1290,19 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0603"/>
+</packageinstances>
+</package3d>
+<package3d name="C1608" urn="urn:adsk.eagle:package:23621/2" type="model" library_version="11">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C1608"/>
+</packageinstances>
+</package3d>
+<package3d name="C0603K" urn="urn:adsk.eagle:package:23680/2" type="model" library_version="11">
+<description>Ceramic Chip Capacitor KEMET 0603 reflow solder
+Metric Code Size 1608</description>
+<packageinstances>
+<packageinstance name="C0603K"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3726,6 +3767,24 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="3" x="3.175" y="13.2842" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="3.175" y="11.3792" size="1" layer="38" rot="MR0"/>
 </element>
+<element name="J3" library="Personal" package="CONN_-SMT-1(01)" value="U.FL-R-SMT-1(01)" x="104.3178" y="5.08" smashed="yes" rot="R227.1">
+<attribute name="BUILT_BY" value="EMA_Matt" x="104.3178" y="5.08" size="1.778" layer="27" rot="R227.1" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="104.3178" y="5.08" size="1.778" layer="27" rot="R227.1" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="U.FL-R-SMT-1(01)" x="104.3178" y="5.08" size="1.778" layer="27" rot="R227.1" display="off"/>
+<attribute name="NAME" x="107.032021875" y="7.0307" size="1.27" layer="25" ratio="6" rot="SR227.1"/>
+<attribute name="SOURCELIBRARY" value="Hirose_12_20_2019" x="104.3178" y="5.08" size="1.778" layer="27" rot="R227.1" display="off"/>
+<attribute name="VENDOR" value="Hirose" x="104.3178" y="5.08" size="1.778" layer="27" rot="R227.1" display="off"/>
+</element>
+<element name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1608" package3d_urn="urn:adsk.eagle:package:23621/2" value="47nH" x="104.5464" y="9.2456" smashed="yes" rot="R180">
+<attribute name="NAME" x="105.1814" y="8.6106" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="3" x="104.5464" y="9.2456" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="104.5464" y="9.2456" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="33pF" x="101.3714" y="9.271" smashed="yes" rot="R180">
+<attribute name="NAME" x="102.1714" y="8.621" size="1.016" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="30" x="101.3714" y="9.271" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="101.3714" y="9.271" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VDD_EXT" class="1">
@@ -5095,7 +5154,6 @@ design rules under a new name.</description>
 <wire x1="96.664" y1="20.21" x2="101.72" y2="20.21" width="0.254" layer="16"/>
 <wire x1="33.067" y1="15.3924" x2="36.3474" y2="15.3924" width="0.254" layer="16"/>
 <wire x1="91.821" y1="15.367" x2="96.664" y2="20.21" width="0.254" layer="16"/>
-<wire x1="101.72" y1="20.21" x2="101.72" y2="21.21" width="0.254" layer="16"/>
 <wire x1="83.8388" y1="14.8036" x2="83.8388" y2="15.0048" width="0.1524" layer="1"/>
 <wire x1="83.8388" y1="15.0048" x2="84.201" y2="15.367" width="0.1524" layer="1"/>
 <wire x1="86.3734" y1="14.8506" x2="86.3734" y2="15.2788" width="0.1524" layer="1"/>
@@ -5119,6 +5177,18 @@ design rules under a new name.</description>
 <wire x1="101.72" y1="21.21" x2="101.72" y2="20.21" width="0.254" layer="16"/>
 <wire x1="104.3686" y1="21.1328" x2="101.847" y2="21.1328" width="0.1524" layer="16"/>
 <wire x1="101.847" y1="21.1328" x2="101.72" y2="21.2598" width="0.1524" layer="16"/>
+<wire x1="91.821" y1="15.367" x2="94.6404" y2="15.367" width="0.254" layer="16"/>
+<wire x1="98.3742" y1="11.6332" x2="98.4758" y2="11.6332" width="0.254" layer="16"/>
+<via x="98.4758" y="11.6332" extent="1-16" drill="0.35"/>
+<wire x1="94.6404" y1="15.367" x2="98.3742" y2="11.6332" width="0.254" layer="16"/>
+<contactref element="L1" pad="1"/>
+<wire x1="98.4758" y1="11.6332" x2="101.3206" y2="11.6332" width="0.254" layer="1"/>
+<wire x1="102.88713125" y1="10.0904" x2="102.8634" y2="10.0904" width="0.254" layer="1"/>
+<wire x1="101.3206" y1="11.6332" x2="102.8634" y2="10.0904" width="0.254" layer="1"/>
+<wire x1="102.8634" y1="10.0904" x2="102.9076" y2="10.1346" width="0.254" layer="1"/>
+<wire x1="102.9076" y1="10.1346" x2="104.9528" y2="10.1346" width="0.254" layer="1"/>
+<wire x1="104.9528" y1="10.1346" x2="105.3964" y2="9.691" width="0.254" layer="1"/>
+<wire x1="105.3964" y1="9.691" x2="105.3964" y2="9.2456" width="0.254" layer="1"/>
 </signal>
 <signal name="N$29">
 <contactref element="U1" pad="52"/>
@@ -5179,6 +5249,22 @@ design rules under a new name.</description>
 <contactref element="J2" pad="3"/>
 <wire x1="100.702" y1="28.1675875" x2="102.104" y2="26.7655875" width="0.254" layer="1"/>
 <wire x1="102.104" y1="26.7655875" x2="102.104" y2="25.865" width="0.254" layer="1"/>
+</signal>
+<signal name="N$36">
+<contactref element="J3" pad="3"/>
+<contactref element="L1" pad="2"/>
+<contactref element="C16" pad="1"/>
+<wire x1="103.6964" y1="9.2456" x2="102.2718" y2="9.2456" width="0.254" layer="1"/>
+<wire x1="102.2718" y1="9.2456" x2="102.2464" y2="9.271" width="0.254" layer="1"/>
+<wire x1="103.1485875" y1="6.166496875" x2="103.1485875" y2="8.6977875" width="0.254" layer="1"/>
+<wire x1="103.1485875" y1="8.6977875" x2="103.6964" y2="9.2456" width="0.254" layer="1"/>
+</signal>
+<signal name="0">
+<contactref element="C16" pad="2"/>
+<contactref element="J3" pad="2"/>
+<contactref element="J3" pad="1"/>
+<wire x1="105.318725" y1="6.157271875" x2="103.316725" y2="4.0028625" width="0" layer="19" extent="1-1"/>
+<wire x1="100.4964" y1="9.271" x2="103.316725" y2="4.0028625" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

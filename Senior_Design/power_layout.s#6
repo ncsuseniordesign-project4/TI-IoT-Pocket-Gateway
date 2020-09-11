@@ -7728,8 +7728,8 @@ W = angled&lt;p&gt;
 </package>
 <package name="CONN_-SMT-1(01)">
 <smd name="1" x="-1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
-<smd name="3" x="1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
-<smd name="2" x="0" y="-1.5961" dx="1.0414" dy="1.0922" layer="1"/>
+<smd name="2" x="1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
+<smd name="3" x="0" y="-1.5961" dx="1.0414" dy="1.0922" layer="1"/>
 <wire x1="0.4064" y1="1.4224" x2="-0.4064" y2="1.4224" width="0.1524" layer="21"/>
 <wire x1="-3.0734" y1="-0.1524" x2="-3.048" y2="0.3048" width="0.1524" layer="21" curve="-32"/>
 <text x="-1.7272" y="0.6604" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
@@ -9068,8 +9068,8 @@ https://www.digikey.com/product-detail/en/on-semiconductor/MSQA6V1W5T2G/MSQA6V1W
 <device name="" package="CONN_-SMT-1(01)">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="3"/>
-<connect gate="A" pin="3" pad="2"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -11496,14 +11496,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="TP26" gate="G$1" pin="TP"/>
 </segment>
 <segment>
-<pinref part="J2" gate="A" pin="3"/>
-<wire x1="-46.99" y1="-58.42" x2="-44.45" y2="-58.42" width="0.1524" layer="91" grouprefs="RF_ANT"/>
-<wire x1="-44.45" y1="-58.42" x2="-44.45" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <pinref part="J2" gate="A" pin="1"/>
-<wire x1="-44.45" y1="-63.5" x2="-46.99" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-44.45" y1="-63.5" x2="-45.72" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
+<wire x1="-45.72" y1="-63.5" x2="-46.99" y2="-63.5" width="0.1524" layer="91" grouprefs="RF_ANT"/>
 <wire x1="-44.45" y1="-63.5" x2="-44.45" y2="-67.31" width="0.1524" layer="91" grouprefs="RF_ANT"/>
-<junction x="-44.45" y="-63.5" grouprefs="RF_ANT"/>
 <pinref part="X_28" gate="G$1" pin="0"/>
+<pinref part="J2" gate="A" pin="2"/>
+<wire x1="-46.99" y1="-60.96" x2="-45.72" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-60.96" x2="-45.72" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-45.72" y="-63.5"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="GND"/>
@@ -12149,14 +12150,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="-24.13" y="-60.96" grouprefs="RF_ANT"/>
 </segment>
 </net>
-<net name="RF_ANT" class="0">
-<segment>
-<pinref part="J2" gate="A" pin="2"/>
-<label x="-41.91" y="-60.96" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="RF_ANT"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="-46.99" y1="-60.96" x2="-34.29" y2="-60.96" width="0.1524" layer="91" grouprefs="RF_ANT"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GNSS_ANT"/>
@@ -12234,6 +12227,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="U2" gate="A" pin="!RESET"/>
 <pinref part="TP25" gate="G$1" pin="TP"/>
 <wire x1="-22.86" y1="121.92" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-34.29" y1="-60.96" x2="-40.64" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-60.96" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="-40.64" y1="-58.42" x2="-46.99" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

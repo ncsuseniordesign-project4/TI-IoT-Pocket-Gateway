@@ -171,7 +171,7 @@
 <text x="3.3528" y="5.7658" size="0.6096" layer="21">Liza Lance</text>
 <text x="3.2004" y="4.7244" size="0.6096" layer="21">Arthur Brazzle</text>
 <text x="3.3274" y="3.683" size="0.6096" layer="21">Alex Minser</text>
-<text x="1.6256" y="7.8994" size="0.6096" layer="21">NCSU ECE Senior Design 2020</text>
+<text x="0.9144" y="7.8994" size="0.6096" layer="21">NCSU ECE Senior Design 2020</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

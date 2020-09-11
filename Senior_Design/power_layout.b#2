@@ -167,11 +167,11 @@
 <wire x1="108.1622" y1="24.9746" x2="98.1622" y2="34.9746" width="0.1" layer="20" curve="90"/>
 <wire x1="10" y1="35" x2="0" y2="25" width="0.1" layer="20" curve="90"/>
 <wire x1="98.1622" y1="-0.0254" x2="108.1622" y2="9.9746" width="0.1" layer="20" curve="90"/>
-<text x="0.889" y="7.8486" size="1.778" layer="21" font="fixed">NSCU ECE Senior Design 2020</text>
-<text x="1.016" y="6.4262" size="1.778" layer="21" font="fixed">Janak Patel</text>
-<text x="1.4986" y="5.4356" size="1.778" layer="21" font="fixed">Liza Lance</text>
-<text x="2.4638" y="4.2418" size="1.778" layer="21" font="fixed">Arthur Brazzle</text>
-<text x="3.556" y="2.921" size="1.778" layer="21" font="fixed">Alex Minser</text>
+<text x="3.2766" y="6.7056" size="0.6096" layer="21">Janak Patel</text>
+<text x="3.3528" y="5.7658" size="0.6096" layer="21">Liza Lance</text>
+<text x="3.2004" y="4.7244" size="0.6096" layer="21">Arthur Brazzle</text>
+<text x="3.3274" y="3.683" size="0.6096" layer="21">Alex Minser</text>
+<text x="1.6256" y="7.8994" size="0.6096" layer="21">NCSU ECE Senior Design 2020</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

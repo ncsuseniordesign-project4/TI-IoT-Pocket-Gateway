@@ -5177,7 +5177,8 @@ design rules under a new name.</description>
 <signal name="N$35">
 <contactref element="R27" pad="1"/>
 <contactref element="J2" pad="3"/>
-<wire x1="100.702" y1="28.1675875" x2="102.104" y2="25.865" width="0" layer="19" extent="1-1"/>
+<wire x1="100.702" y1="28.1675875" x2="102.104" y2="26.7655875" width="0.254" layer="1"/>
+<wire x1="102.104" y1="26.7655875" x2="102.104" y2="25.865" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
