@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10930,6 +10930,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="U3" library="Personal" deviceset="MAX3373EEKA+T" device=""/>
+<part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP21" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP22" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP23" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP24" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP25" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP26" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP27" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
+<part name="TP28" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 </parts>
 <sheets>
 <sheet>
@@ -10968,17 +10977,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="105.918" y="-86.36" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-14.478" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-81.788" y="-16.637" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-11.938" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-9.398" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
+<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
 <attribute name="NAME" x="-85.09" y="-6.858" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="J1" gate="A" x="143.51" y="119.38" smashed="yes" grouprefs="USB">
@@ -11191,6 +11200,34 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="-4.1656" y="-23.0886" size="2.0828" layer="95" ratio="6" rot="SR180"/>
 <attribute name="VALUE" x="-8.6106" y="-23.0886" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
+<instance part="TP20" gate="G$1" x="110.49" y="-11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.49" y="-11.43" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="109.22" y="-12.7" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP21" gate="G$1" x="46.99" y="-3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.99" y="-3.81" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="48.26" y="-2.54" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP22" gate="G$1" x="46.99" y="-6.35" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.99" y="-6.35" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="48.26" y="-5.08" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP23" gate="G$1" x="80.01" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.01" y="109.22" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="78.74" y="107.95" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP24" gate="G$1" x="80.01" y="106.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.01" y="106.68" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="78.74" y="105.41" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TP25" gate="G$1" x="-27.94" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="-27.94" y="121.92" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-26.67" y="123.19" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP26" gate="G$1" x="138.43" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.43" y="101.6" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="139.7" y="102.87" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11378,10 +11415,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
-<wire x1="-77.47" y1="-5.08" x2="-80.01" y2="-5.08" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-80.01" y1="-5.08" x2="-80.01" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-5.08" x2="-77.47" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<junction x="-77.47" y="-5.08" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-7.62" x2="-80.01" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-7.62" x2="-77.47" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<junction x="-77.47" y="-7.62" grouprefs="SIM7000"/>
 <wire x1="-77.47" y1="7.62" x2="-80.01" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_19" gate="G$1" pin="0"/>
 <wire x1="-80.01" y1="7.62" x2="-80.01" y2="5.08" width="0.1524" layer="91" grouprefs="SIM7000"/>
@@ -11389,8 +11425,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="-77.47" y1="7.62" x2="-72.39" y2="7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="-77.47" y="7.62" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-5.08" x2="-54.61" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-54.61" y1="-5.08" x2="-54.61" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="-77.47" y1="-7.62" x2="-54.61" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-54.61" y1="-7.62" x2="-54.61" y2="-13.97" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="VCC"/>
 <wire x1="-54.61" y1="-13.97" x2="-52.07" y2="-13.97" width="0.1524" layer="91"/>
 </segment>
@@ -11457,6 +11493,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="140.97" y="101.6" grouprefs="USB"/>
 <pinref part="J1" gate="A" pin="4"/>
 <wire x1="140.97" y1="111.76" x2="143.51" y2="111.76" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP26" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="J2" gate="A" pin="3"/>
@@ -11551,15 +11588,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="-64.77" y1="-7.62" x2="-77.47" y2="-7.62" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-77.47" y1="-7.62" x2="-77.47" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-52.07" y1="-8.89" x2="-77.47" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-77.47" y1="-8.89" x2="-77.47" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="-77.47" y1="-10.16" x2="-80.01" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-64.77" y1="-7.62" x2="-64.77" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-64.77" y1="-12.7" x2="-57.15" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-57.15" y1="-12.7" x2="-57.15" y2="-8.89" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="IO/VL1"/>
-<wire x1="-57.15" y1="-8.89" x2="-52.07" y2="-8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWRKEY" class="0">
@@ -11652,12 +11685,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-25.4" y="124.46" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="USB"/>
 </segment>
 <segment>
-<wire x1="-72.39" y1="-10.16" x2="-74.93" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-74.93" y1="-10.16" x2="-74.93" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-74.93" y1="-15.24" x2="-80.01" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-72.39" y1="-15.24" x2="-80.01" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <label x="-72.39" y="-2.54" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
-<wire x1="-72.39" y1="0" x2="-72.39" y2="-10.16" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-72.39" y1="0" x2="-72.39" y2="-15.24" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -12020,12 +12051,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <pinref part="U2" gate="A" pin="DP4"/>
 <wire x1="73.66" y1="109.22" x2="77.47" y2="109.22" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP23" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="DM4"/>
 <wire x1="73.66" y1="106.68" x2="77.47" y2="106.68" width="0.1524" layer="91" grouprefs="USB"/>
+<pinref part="TP24" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -12067,12 +12100,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="-80.01" y1="-12.7" x2="-67.31" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-67.31" y1="-15.24" x2="-67.31" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<wire x1="-67.31" y1="-15.24" x2="-54.61" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-54.61" y1="-15.24" x2="-54.61" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="-80.01" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-55.88" y1="-16.51" x2="-55.88" y2="-12.7" width="0.1524" layer="91" grouprefs="SIM7000"/>
+<wire x1="-55.88" y1="-16.51" x2="-52.07" y2="-16.51" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="IO/VCC1"/>
-<wire x1="-54.61" y1="-16.51" x2="-52.07" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -12177,6 +12208,34 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="U1" gate="G$1" pin="I2C_SDA"/>
 </segment>
 </net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="CTS"/>
+<wire x1="53.34" y1="-3.81" x2="49.53" y2="-3.81" width="0.1524" layer="91"/>
+<pinref part="TP21" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RTS"/>
+<wire x1="53.34" y1="-6.35" x2="49.53" y2="-6.35" width="0.1524" layer="91"/>
+<pinref part="TP22" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="STATUS"/>
+<wire x1="104.14" y1="-11.43" x2="107.95" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="TP20" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="!RESET"/>
+<pinref part="TP25" gate="G$1" pin="TP"/>
+<wire x1="-22.86" y1="121.92" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12260,6 +12319,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="NAME" x="165.1" y="92.71" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="166.37" y="88.9" size="1.778" layer="97" rot="R270"/>
 </instance>
+<instance part="TP27" gate="G$1" x="130.81" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="132.08" y="72.39" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP28" gate="G$1" x="166.37" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="166.37" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="167.64" y="72.39" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12329,6 +12396,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="GROVE1" gate="G$1" pin="4"/>
 <wire x1="133.35" y1="71.12" x2="133.35" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_14" gate="G$1" pin="0"/>
+<pinref part="TP27" gate="G$1" pin="TP"/>
+<junction x="133.35" y="71.12"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -12338,6 +12407,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="J4[GROVE]" gate="G$1" pin="4"/>
 <wire x1="168.91" y1="71.12" x2="168.91" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_22" gate="G$1" pin="0"/>
+<pinref part="TP28" gate="G$1" pin="TP"/>
+<junction x="168.91" y="71.12"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -12167,6 +12167,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-68.58" y="-127" size="1.778" layer="112">NSCU ECE Senior Design 2020</text>
+<text x="-60.96" y="-137.16" size="1.778" layer="112">Janak Patel
+Liza Lance
+Arthur Brazzle
+Alex Minser</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="78.74" y="-3.81" smashed="yes" grouprefs="SIM7000">
@@ -13923,6 +13928,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

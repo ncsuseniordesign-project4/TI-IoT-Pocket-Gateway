@@ -11188,7 +11188,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="TP_SIGNAL_NAME" x="107.95" y="10.16" size="1.778" layer="97"/>
 </instance>
 <instance part="U3" gate="A" x="26.67" y="-16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="-9.2456" y="-25.6286" size="2.0828" layer="95" ratio="6" rot="SR180"/>
+<attribute name="NAME" x="-4.1656" y="-23.0886" size="2.0828" layer="95" ratio="6" rot="SR180"/>
 <attribute name="VALUE" x="-8.6106" y="-23.0886" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
 </instances>
@@ -12054,7 +12054,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="33.02" y="-13.97" size="1.778" layer="95" xref="yes" grouprefs="SIM7000"/>
 <wire x1="27.94" y1="-13.97" x2="27.94" y2="-11.43" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="VL"/>
-<wire x1="27.94" y1="-11.43" x2="24.13" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-11.43" x2="25.4" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="!THREESTATE"/>
+<wire x1="25.4" y1="-11.43" x2="24.13" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="-52.07" y1="-11.43" x2="-53.34" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-11.43" x2="-53.34" y2="0" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="-11.43" width="0.1524" layer="91"/>
+<junction x="25.4" y="-11.43"/>
 </segment>
 </net>
 <net name="N$13" class="0">
