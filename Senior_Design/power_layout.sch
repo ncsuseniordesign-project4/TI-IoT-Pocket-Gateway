@@ -11000,7 +11000,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </groups>
 <parts>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="330uF"/>
 <part name="POWER_SUPPLY" library="MIC29302WU" deviceset="MIC29302WU" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -11008,7 +11008,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U1" library="SIM7000E" deviceset="SIM7000E" device=""/>
@@ -11024,9 +11024,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="GROVE1" library="640456-4" deviceset="640456-4" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
-<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="330"/>
+<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="60.4"/>
+<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="180"/>
+<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="180"/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
@@ -11181,17 +11181,17 @@ Alex Minser</text>
 <attribute name="NAME" x="105.918" y="-86.36" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
+<instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
 <attribute name="NAME" x="-85.09" y="-14.478" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-81.788" y="-16.637" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
+<instance part="X1" gate="-2" x="-82.55" y="-12.7" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
 <attribute name="NAME" x="-85.09" y="-11.938" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
+<instance part="X1" gate="-3" x="-82.55" y="-10.16" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
 <attribute name="NAME" x="-85.09" y="-9.398" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="DBG_HDR SIM7000">
+<instance part="X1" gate="-4" x="-82.55" y="-7.62" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
 <attribute name="NAME" x="-85.09" y="-6.858" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="J1" gate="A" x="143.51" y="119.38" smashed="yes" grouprefs="USB">

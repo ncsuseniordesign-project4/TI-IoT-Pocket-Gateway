@@ -192,12 +192,13 @@
 <vertex x="5.1054" y="7.6782"/>
 <vertex x="5.1054" y="7.267"/>
 </polygon>
-<smd name="6" x="0" y="2.54" dx="10.8" dy="10.41" layer="1"/>
+<smd name="6" x="0" y="2.54" dx="10.8" dy="10.41" layer="1" cream="no"/>
 <smd name="1" x="-3.4036" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="2" x="-1.7018" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="3" x="0" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="4" x="1.7018" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="5" x="3.4036" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
+<rectangle x1="-3.302" y1="-1.397" x2="3.937" y2="5.461" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -11127,7 +11128,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="U3" library="Personal" deviceset="MAX3373EEKA+T" device=""/>
-<part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP21" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP22" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP23" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
@@ -11142,6 +11142,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="X_38" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
 <part name="SJ2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
+<part name="D5" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-YELLOW" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="Yellow"/>
+<part name="X_39" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R33" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -11401,10 +11404,6 @@ Alex Minser</text>
 <attribute name="NAME" x="-4.1656" y="-23.0886" size="2.0828" layer="95" ratio="6" rot="SR180"/>
 <attribute name="VALUE" x="-8.6106" y="-23.0886" size="2.0828" layer="96" ratio="6" rot="SR180"/>
 </instance>
-<instance part="TP20" gate="G$1" x="110.49" y="-11.43" smashed="yes" rot="R270">
-<attribute name="NAME" x="110.49" y="-11.43" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="109.22" y="-12.7" size="1.778" layer="97" rot="R270"/>
-</instance>
 <instance part="TP21" gate="G$1" x="46.99" y="-3.81" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.99" y="-3.81" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="48.26" y="-2.54" size="1.778" layer="97" rot="R90"/>
@@ -11444,6 +11443,12 @@ Alex Minser</text>
 <instance part="SJ2" gate="1" x="27.94" y="11.43" smashed="yes">
 <attribute name="NAME" x="25.4" y="13.97" size="1.778" layer="95"/>
 <attribute name="VALUE" x="25.4" y="7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="D5" gate="G$1" x="109.22" y="-22.86" smashed="yes"/>
+<instance part="X_39" gate="G$1" x="109.22" y="-27.94" smashed="yes" rot="MR0"/>
+<instance part="R33" gate="G$1" x="109.22" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.696" y="-15.24" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="110.744" y="-15.24" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -12455,7 +12460,9 @@ Alex Minser</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="STATUS"/>
 <wire x1="104.14" y1="-11.43" x2="107.95" y2="-11.43" width="0.1524" layer="91"/>
-<pinref part="TP20" gate="G$1" pin="TP"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<wire x1="107.95" y1="-11.43" x2="107.95" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="107.95" y1="-10.16" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -12489,6 +12496,18 @@ Alex Minser</text>
 <pinref part="U1" gate="G$1" pin="USB_VBUS"/>
 <wire x1="33.02" y1="11.43" x2="53.34" y2="11.43" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="2"/>
+</segment>
+</net>
+<net name="0" class="0">
+<segment>
+<pinref part="X_39" gate="G$1" pin="0"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

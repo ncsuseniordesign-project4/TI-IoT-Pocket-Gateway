@@ -11142,7 +11142,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="33pF"/>
 <part name="X_38" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SJ2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
-<part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="W" package3d_urn="urn:adsk.eagle:package:15476/1"/>
+<part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12502,16 +12502,16 @@ Alex Minser</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="17.78" y="30.48" smashed="yes" grouprefs="POWER"/>
-<instance part="C3" gate="G$1" x="114.3" y="30.48" smashed="yes" grouprefs="POWER"/>
+<instance part="C3" gate="G$1" x="137.16" y="24.13" smashed="yes" grouprefs="POWER"/>
 <instance part="POWER_SUPPLY" gate="G$1" x="50.8" y="33.02" smashed="yes" grouprefs="POWER"/>
 <instance part="X_1" gate="G$1" x="99.06" y="20.32" smashed="yes" grouprefs="POWER"/>
 <instance part="X_2" gate="G$1" x="35.56" y="25.4" smashed="yes" grouprefs="POWER"/>
-<instance part="X_3" gate="G$1" x="114.3" y="20.32" smashed="yes" grouprefs="POWER"/>
+<instance part="X_3" gate="G$1" x="137.16" y="13.97" smashed="yes" grouprefs="POWER"/>
 <instance part="X_4" gate="G$1" x="17.78" y="20.32" smashed="yes" rot="MR0" grouprefs="POWER"/>
 <instance part="X_5" gate="G$1" x="25.4" y="20.32" smashed="yes" rot="MR0" grouprefs="POWER"/>
 <instance part="C4" gate="G$1" x="25.4" y="30.48" smashed="yes" grouprefs="POWER"/>
-<instance part="C5" gate="G$1" x="127" y="30.48" smashed="yes" grouprefs="POWER"/>
-<instance part="X_6" gate="G$1" x="127" y="20.32" smashed="yes" rot="MR0" grouprefs="POWER"/>
+<instance part="C5" gate="G$1" x="149.86" y="24.13" smashed="yes" grouprefs="POWER"/>
+<instance part="X_6" gate="G$1" x="149.86" y="13.97" smashed="yes" rot="MR0" grouprefs="POWER"/>
 <instance part="X_7" gate="G$1" x="83.82" y="5.08" smashed="yes" rot="MR0" grouprefs="POWER"/>
 <instance part="P+1" gate="1" x="2.54" y="38.1" smashed="yes" grouprefs="POWER"/>
 <instance part="R4" gate="G$1" x="83.82" y="12.7" smashed="yes" rot="R90" grouprefs="POWER"/>
@@ -12543,9 +12543,9 @@ Alex Minser</text>
 <instance part="X_22" gate="G$1" x="168.91" y="68.58" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="C7" gate="G$1" x="179.07" y="86.36" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_23" gate="G$1" x="181.61" y="86.36" smashed="yes" rot="MR270" grouprefs="GROVE"/>
-<instance part="TP5" gate="G$1" x="132.08" y="36.83" smashed="yes" rot="R90" grouprefs="POWER">
-<attribute name="NAME" x="134.62" y="39.37" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="38.1" size="1.778" layer="97" rot="R90"/>
+<instance part="TP5" gate="G$1" x="109.22" y="35.56" smashed="yes" rot="R90" grouprefs="POWER">
+<attribute name="NAME" x="111.76" y="38.1" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="110.49" y="36.83" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="TP6" gate="G$1" x="30.48" y="36.83" smashed="yes" rot="R90" grouprefs="POWER">
 <attribute name="NAME" x="33.02" y="39.37" size="1.778" layer="95" rot="R180"/>
@@ -12579,9 +12579,9 @@ Alex Minser</text>
 <attribute name="NAME" x="166.37" y="71.12" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="167.64" y="72.39" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="SJ1" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="R180" grouprefs="POWER">
-<attribute name="NAME" x="132.08" y="27.559" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="132.08" y="29.845" size="1.778" layer="96" rot="R180"/>
+<instance part="SJ1" gate="G$1" x="111.76" y="26.67" smashed="yes" rot="R180" grouprefs="POWER">
+<attribute name="NAME" x="109.22" y="26.289" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="109.22" y="28.575" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -12597,6 +12597,7 @@ Alex Minser</text>
 <junction x="83.82" y="20.32" grouprefs="POWER"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<label x="71.12" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -12624,11 +12625,11 @@ Alex Minser</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="X_3" gate="G$1" pin="0"/>
-<wire x1="114.3" y1="25.4" x2="114.3" y2="20.32" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="137.16" y1="19.05" x2="137.16" y2="13.97" width="0.1524" layer="91" grouprefs="POWER"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="127" y1="25.4" x2="127" y2="20.32" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="149.86" y1="19.05" x2="149.86" y2="13.97" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="X_6" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -12843,29 +12844,15 @@ Alex Minser</text>
 </net>
 <net name="MODEM_POWER" class="0">
 <segment>
-<pinref part="POWER_SUPPLY" gate="G$1" pin="OUT"/>
-<wire x1="71.12" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="99.06" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="114.3" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="114.3" y="33.02" grouprefs="POWER"/>
-<wire x1="127" y1="33.02" x2="134.62" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="127" y="33.02" grouprefs="POWER"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<junction x="83.82" y="33.02" grouprefs="POWER"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<junction x="99.06" y="33.02" grouprefs="POWER"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="36.83" x2="134.62" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="SJ1" gate="G$1" pin="3"/>
-<junction x="134.62" y="33.02" grouprefs="POWER"/>
-</segment>
-<segment>
 <pinref part="SJ1" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="27.94" x2="140.97" y2="27.94" width="0.1524" layer="91" grouprefs="POWER"/>
-<label x="140.97" y="27.94" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
+<label x="152.4" y="26.67" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
+<wire x1="116.84" y1="26.67" x2="137.16" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="26.67" x2="149.86" y2="26.67" width="0.1524" layer="91"/>
+<junction x="137.16" y="26.67"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="26.67" x2="152.4" y2="26.67" width="0.1524" layer="91"/>
+<junction x="149.86" y="26.67"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -12890,9 +12877,9 @@ Alex Minser</text>
 <junction x="161.29" y="96.52"/>
 </segment>
 <segment>
-<label x="140.97" y="17.78" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
-<wire x1="134.62" y1="22.86" x2="134.62" y2="17.78" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="134.62" y1="17.78" x2="140.97" y2="17.78" width="0.1524" layer="91" grouprefs="POWER"/>
+<label x="118.11" y="16.51" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
+<wire x1="111.76" y1="21.59" x2="111.76" y2="16.51" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="111.76" y1="16.51" x2="118.11" y2="16.51" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -12911,6 +12898,24 @@ Alex Minser</text>
 <pinref part="SW3" gate="G$1" pin="P$2"/>
 <wire x1="55.88" y1="101.6" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="55.88" y="101.6" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="REGULATED" class="0">
+<segment>
+<pinref part="POWER_SUPPLY" gate="G$1" pin="OUT"/>
+<wire x1="71.12" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="83.82" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<junction x="83.82" y="33.02" grouprefs="POWER"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="111.76" y1="35.56" x2="111.76" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="SJ1" gate="G$1" pin="3"/>
+<label x="111.76" y="35.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="111.76" y1="33.02" x2="111.76" y2="31.75" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="99.06" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
+<junction x="99.06" y="33.02"/>
+<junction x="111.76" y="33.02"/>
 </segment>
 </net>
 </nets>

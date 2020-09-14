@@ -3214,12 +3214,6 @@ design rules under a new name.</description>
 <attribute name="SOURCELIBRARY" value="Maxim_2009-12-17_3a" x="74.9046" y="6.477" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VENDOR" value="Maxim Integrated Products" x="74.9046" y="6.477" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R" x="104.4448" y="11.176" smashed="yes" rot="MR0">
-<attribute name="NAME" x="105.5037" y="11.8529" size="0.762" layer="26" rot="MR0"/>
-<attribute name="POPULARITY" value="3" x="104.4448" y="11.176" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="104.4448" y="9.271" size="1" layer="38" rot="MR0"/>
-<attribute name="VALUE" x="104.8258" y="10.668" size="0.0254" layer="28" rot="MR0"/>
-</element>
 <element name="TP21" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R" x="91.5924" y="2.286" smashed="yes" rot="MR0">
 <attribute name="NAME" x="92.6767" y="2.9883" size="0.762" layer="26" rot="MR0"/>
 <attribute name="POPULARITY" value="3" x="91.5924" y="2.286" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -3290,6 +3284,16 @@ design rules under a new name.</description>
 <attribute name="NAME" x="74.3458" y="16.5862" size="0.762" layer="26" rot="MR0"/>
 <attribute name="POPULARITY" value="33" x="74.3458" y="15.3924" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="74.7459" y="15.3924" size="0.02" layer="28" rot="MR180"/>
+</element>
+<element name="D5" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="Yellow" x="104.8258" y="13.7922" smashed="yes">
+<attribute name="NAME" x="104.8258" y="14.4272" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-09003" x="105.1052" y="17.0434" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="104.8258" y="13.1572" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R33" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="330" x="104.9528" y="16.9164" smashed="yes">
+<attribute name="NAME" x="104.9528" y="17.6784" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-07856" x="105.1052" y="13.9192" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="104.9528" y="16.1544" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -4637,10 +4641,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$33">
 <contactref element="U1" pad="66"/>
-<contactref element="TP20" pad="TP"/>
-<wire x1="104.4448" y1="11.176" x2="104.4194" y2="11.2014" width="0.1524" layer="16"/>
 <wire x1="104.4194" y1="11.2014" x2="101.7286" y2="11.2014" width="0.1524" layer="16"/>
 <wire x1="101.72" y1="11.21" x2="101.7286" y2="11.2014" width="0.1524" layer="16"/>
+<contactref element="R33" pad="2"/>
+<wire x1="105.8028" y1="16.9164" x2="101.72" y2="11.21" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$34">
 <contactref element="U2" pad="4"/>
@@ -4676,8 +4680,6 @@ design rules under a new name.</description>
 <contactref element="POWER_SUPPLY" pad="4"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R6" pad="2"/>
-<wire x1="32.9712" y1="15.4882" x2="33.9148" y2="15.4882" width="0.254" layer="16"/>
-<wire x1="32.9712" y1="15.4882" x2="35.6296" y2="15.4882" width="0.254" layer="16"/>
 <wire x1="35.6296" y1="15.4882" x2="37.05" y2="14.0678" width="0.254" layer="16"/>
 <wire x1="37.05" y1="14.0678" x2="36.9718" y2="14.146" width="0.254" layer="16"/>
 <wire x1="36.9718" y1="14.146" x2="36.9718" y2="17.0462" width="0.254" layer="16"/>
@@ -4689,6 +4691,15 @@ design rules under a new name.</description>
 <wire x1="35.3314" y1="14.0462" x2="35.3314" y2="12.87923125" width="0.254" layer="1"/>
 <contactref element="SJ1" pad="3"/>
 <wire x1="33.6042" y1="11.15203125" x2="33.6042" y2="10.3124" width="0.254" layer="1"/>
+<wire x1="32.9712" y1="15.4882" x2="35.6296" y2="15.4882" width="0.254" layer="16"/>
+</signal>
+<signal name="0">
+<contactref element="D5" pad="C"/>
+</signal>
+<signal name="N$37">
+<contactref element="R33" pad="1"/>
+<contactref element="D5" pad="A"/>
+<wire x1="104.1028" y1="16.9164" x2="103.9488" y2="13.7922" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -192,12 +192,13 @@
 <vertex x="5.1054" y="7.6782"/>
 <vertex x="5.1054" y="7.267"/>
 </polygon>
-<smd name="6" x="0" y="2.54" dx="10.8" dy="10.41" layer="1"/>
+<smd name="6" x="0" y="2.54" dx="10.8" dy="10.41" layer="1" cream="no"/>
 <smd name="1" x="-3.4036" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="2" x="-1.7018" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="3" x="0" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="4" x="1.7018" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
 <smd name="5" x="3.4036" y="-5.7912" dx="1.0668" dy="2.159" layer="1"/>
+<rectangle x1="-3.302" y1="-1.397" x2="3.937" y2="5.461" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -12539,9 +12540,9 @@ Alex Minser</text>
 <instance part="X_22" gate="G$1" x="168.91" y="68.58" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="C7" gate="G$1" x="179.07" y="86.36" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_23" gate="G$1" x="181.61" y="86.36" smashed="yes" rot="MR270" grouprefs="GROVE"/>
-<instance part="TP5" gate="G$1" x="109.22" y="35.56" smashed="yes" rot="R90" grouprefs="POWER">
-<attribute name="NAME" x="111.76" y="38.1" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="110.49" y="36.83" size="1.778" layer="97" rot="R90"/>
+<instance part="TP5" gate="G$1" x="133.35" y="29.21" smashed="yes" grouprefs="POWER">
+<attribute name="NAME" x="135.89" y="26.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="134.62" y="27.94" size="1.778" layer="97"/>
 </instance>
 <instance part="TP6" gate="G$1" x="30.48" y="36.83" smashed="yes" rot="R90" grouprefs="POWER">
 <attribute name="NAME" x="33.02" y="39.37" size="1.778" layer="95" rot="R180"/>
@@ -12842,13 +12843,16 @@ Alex Minser</text>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <label x="152.4" y="26.67" size="1.778" layer="95" xref="yes" grouprefs="POWER"/>
-<wire x1="116.84" y1="26.67" x2="137.16" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="26.67" x2="133.35" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="133.35" y1="26.67" x2="137.16" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="26.67" x2="149.86" y2="26.67" width="0.1524" layer="91"/>
 <junction x="137.16" y="26.67"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="26.67" x2="152.4" y2="26.67" width="0.1524" layer="91"/>
 <junction x="149.86" y="26.67"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<junction x="133.35" y="26.67"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -12902,14 +12906,11 @@ Alex Minser</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 <junction x="83.82" y="33.02" grouprefs="POWER"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
-<wire x1="111.76" y1="35.56" x2="111.76" y2="33.02" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="SJ1" gate="G$1" pin="3"/>
-<label x="111.76" y="35.56" size="1.778" layer="95" xref="yes"/>
+<label x="111.76" y="33.02" size="1.778" layer="95" xref="yes"/>
 <wire x1="111.76" y1="33.02" x2="111.76" y2="31.75" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="99.06" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 <junction x="99.06" y="33.02"/>
-<junction x="111.76" y="33.02"/>
 </segment>
 </net>
 </nets>
