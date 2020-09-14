@@ -10999,7 +10999,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <schematic_group name="POWER"/>
 </groups>
 <parts>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="330uF"/>
 <part name="POWER_SUPPLY" library="MIC29302WU" deviceset="MIC29302WU" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -11007,13 +11007,13 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U1" library="SIM7000E" deviceset="SIM7000E" device=""/>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="J1[SIMCARD]" library="78646-3001" deviceset="78646-3001" device=""/>
+<part name="SIMCARD" library="78646-3001" deviceset="78646-3001" device=""/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RED" device="1206" package3d_urn="urn:adsk.eagle:package:39352/1" value="RED"/>
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="1206" package3d_urn="urn:adsk.eagle:package:39352/1" value="GREEN"/>
@@ -11027,30 +11027,30 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="60.4"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="180"/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="180"/>
-<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
-<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="47k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="100k"/>
+<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="470k"/>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="4700"/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SW1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ" package3d_urn="urn:adsk.eagle:package:6240956/1"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF"/>
 <part name="X_17" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="J4[GROVE]" library="640456-4" deviceset="640456-4" device=""/>
+<part name="GROVE2" library="640456-4" deviceset="640456-4" device=""/>
 <part name="X_22" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="X_23" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="4700"/>
 <part name="X_24" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SW2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ" package3d_urn="urn:adsk.eagle:package:6240956/1"/>
-<part name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="4700"/>
 <part name="X_25" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SW3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ" package3d_urn="urn:adsk.eagle:package:6240956/1"/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:8360/1"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:8360/1"/>
-<part name="U$1" library="Personal" deviceset="MSQA6V1W5T2G" device=""/>
+<part name="U5" library="Personal" deviceset="MSQA6V1W5T2G" device=""/>
 <part name="X1" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-04" device="" package3d_urn="urn:adsk.eagle:package:6809/1"/>
 <part name="J1" library="Personal" deviceset="AU-Y1008-2" device=""/>
 <part name="X_18" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -11062,25 +11062,25 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BCX70SMD" device="" package3d_urn="urn:adsk.eagle:package:28738/2"/>
 <part name="X_20" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_21" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF"/>
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="47KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="47k"/>
 <part name="R18" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="47KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="47k"/>
 <part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="R19" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="27"/>
 <part name="R20" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="27"/>
-<part name="R21" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
-<part name="R22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value=" "/>
+<part name="R21" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="27"/>
+<part name="R22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0805" package3d_urn="urn:adsk.eagle:package:39651/1" value="27"/>
 <part name="J2" library="Personal" deviceset="U.FL-R-SMT-1(01)" device=""/>
 <part name="X_28" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U2" library="Personal" deviceset="TUSB2046BVFR" device=""/>
 <part name="U4" library="Personal" deviceset="TPS2044BDR" device=""/>
 <part name="X_29" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF"/>
 <part name="X_30" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -11161,7 +11161,7 @@ Alex Minser</text>
 <attribute name="VALUE" x="58.3956" y="-36.8696" size="1.78013125" layer="96"/>
 </instance>
 <instance part="X_8" gate="G$1" x="106.68" y="-36.83" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
-<instance part="J1[SIMCARD]" gate="G$1" x="152.4" y="16.51" smashed="yes" grouprefs="SIM7000">
+<instance part="SIMCARD" gate="G$1" x="152.4" y="16.51" smashed="yes" grouprefs="SIM7000">
 <attribute name="NAME" x="145.2786" y="27.1876" size="1.780359375" layer="95"/>
 <attribute name="VALUE" x="145.00353125" y="1.726" size="1.78643125" layer="96"/>
 </instance>
@@ -11180,7 +11180,7 @@ Alex Minser</text>
 <attribute name="VALUE" x="157.48" y="-86.36" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="105.918" y="-86.36" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
+<instance part="U5" gate="G$1" x="147.32" y="-31.75" smashed="yes" rot="MR0" grouprefs="SIM7000"/>
 <instance part="X1" gate="-1" x="-82.55" y="-15.24" smashed="yes" rot="R180" grouprefs="SIM7000 DBG_HDR">
 <attribute name="NAME" x="-85.09" y="-14.478" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-81.788" y="-16.637" size="1.778" layer="96" rot="R180"/>
@@ -11261,7 +11261,6 @@ Alex Minser</text>
 </instance>
 <instance part="R21" gate="G$1" x="87.63" y="95.25" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="87.63" y="96.774" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="87.63" y="93.726" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R22" gate="G$1" x="86.36" y="90.17" smashed="yes" grouprefs="USB">
 <attribute name="NAME" x="86.36" y="91.694" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -11474,7 +11473,7 @@ Alex Minser</text>
 <wire x1="129.54" y1="21.59" x2="129.54" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="129.54" y1="31.75" x2="170.18" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="170.18" y1="31.75" x2="170.18" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<pinref part="J1[SIMCARD]" gate="G$1" pin="VCC"/>
+<pinref part="SIMCARD" gate="G$1" pin="VCC"/>
 <wire x1="170.18" y1="24.13" x2="165.1" y2="24.13" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="170.18" y1="31.75" x2="175.26" y2="31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="170.18" y="31.75" grouprefs="SIM7000"/>
@@ -11482,7 +11481,7 @@ Alex Minser</text>
 <wire x1="121.92" y1="21.59" x2="121.92" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="121.92" y="21.59" grouprefs="SIM7000"/>
 <wire x1="121.92" y1="-8.89" x2="152.4" y2="-8.89" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<pinref part="U$1" gate="G$1" pin="P$5"/>
+<pinref part="U5" gate="G$1" pin="P$5"/>
 <wire x1="152.4" y1="-8.89" x2="152.4" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
@@ -11496,10 +11495,10 @@ Alex Minser</text>
 <wire x1="157.48" y1="-1.27" x2="180.34" y2="-1.27" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="180.34" y1="-1.27" x2="180.34" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="180.34" y1="13.97" x2="165.1" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<pinref part="J1[SIMCARD]" gate="G$1" pin="I/O"/>
+<pinref part="SIMCARD" gate="G$1" pin="I/O"/>
 <wire x1="157.48" y1="-1.27" x2="157.48" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="157.48" y="-1.27" grouprefs="SIM7000"/>
-<pinref part="U$1" gate="G$1" pin="P$4"/>
+<pinref part="U5" gate="G$1" pin="P$4"/>
 <wire x1="157.48" y1="-29.21" x2="152.4" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="TP19" gate="G$1" pin="TP"/>
 <junction x="106.68" y="8.89"/>
@@ -11599,22 +11598,22 @@ Alex Minser</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="J1[SIMCARD]" gate="G$1" pin="RST"/>
+<pinref part="SIMCARD" gate="G$1" pin="RST"/>
 <pinref part="U1" gate="G$1" pin="SIM_CLK"/>
 <wire x1="104.14" y1="16.51" x2="119.38" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="119.38" y1="16.51" x2="139.7" y2="16.51" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="119.38" y1="16.51" x2="119.38" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <junction x="119.38" y="16.51" grouprefs="SIM7000"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="U5" gate="G$1" pin="P$1"/>
 <wire x1="119.38" y1="-13.97" x2="121.92" y2="-13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J1[SIMCARD]" gate="G$1" pin="CLK"/>
+<pinref part="SIMCARD" gate="G$1" pin="CLK"/>
 <pinref part="U1" gate="G$1" pin="SIM_RST"/>
 <wire x1="139.7" y1="13.97" x2="116.84" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<pinref part="U$1" gate="G$1" pin="P$3"/>
+<pinref part="U5" gate="G$1" pin="P$3"/>
 <wire x1="116.84" y1="13.97" x2="104.14" y2="13.97" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="116.84" y1="13.97" x2="116.84" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="116.84" y1="-29.21" x2="121.92" y2="-29.21" width="0.1524" layer="91" grouprefs="SIM7000"/>
@@ -11627,7 +11626,7 @@ Alex Minser</text>
 <wire x1="104.14" y1="-31.75" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_8" gate="G$1" pin="0"/>
 <wire x1="106.68" y1="-36.83" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="U5" gate="G$1" pin="P$2"/>
 <wire x1="121.92" y1="-21.59" x2="114.3" y2="-21.59" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="114.3" y1="-21.59" x2="114.3" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="114.3" y1="-31.75" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
@@ -11665,7 +11664,7 @@ Alex Minser</text>
 <junction x="73.66" y="119.38" grouprefs="USB"/>
 </segment>
 <segment>
-<pinref part="J1[SIMCARD]" gate="G$1" pin="GND"/>
+<pinref part="SIMCARD" gate="G$1" pin="GND"/>
 <wire x1="165.1" y1="6.35" x2="170.18" y2="6.35" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <wire x1="170.18" y1="6.35" x2="170.18" y2="3.81" width="0.1524" layer="91" grouprefs="SIM7000"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
@@ -12554,7 +12553,7 @@ Alex Minser</text>
 <instance part="X_14" gate="G$1" x="133.35" y="68.58" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="C2" gate="G$1" x="144.78" y="86.36" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_15" gate="G$1" x="147.32" y="86.36" smashed="yes" rot="MR270" grouprefs="GROVE"/>
-<instance part="J4[GROVE]" gate="G$1" x="179.07" y="73.66" smashed="yes" grouprefs="GROVE"/>
+<instance part="GROVE2" gate="G$1" x="179.07" y="73.66" smashed="yes" grouprefs="GROVE"/>
 <instance part="X_22" gate="G$1" x="168.91" y="68.58" smashed="yes" rot="MR0" grouprefs="GROVE"/>
 <instance part="C7" gate="G$1" x="179.07" y="86.36" smashed="yes" rot="R270" grouprefs="GROVE"/>
 <instance part="X_23" gate="G$1" x="181.61" y="86.36" smashed="yes" rot="MR270" grouprefs="GROVE"/>
@@ -12676,7 +12675,7 @@ Alex Minser</text>
 <pinref part="X_15" gate="G$1" pin="0"/>
 </segment>
 <segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="4"/>
+<pinref part="GROVE2" gate="G$1" pin="4"/>
 <wire x1="168.91" y1="71.12" x2="168.91" y2="68.58" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="X_22" gate="G$1" pin="0"/>
 <pinref part="TP28" gate="G$1" pin="TP"/>
@@ -12765,7 +12764,7 @@ Alex Minser</text>
 </net>
 <net name="I2C2_SDA" class="0">
 <segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="2"/>
+<pinref part="GROVE2" gate="G$1" pin="2"/>
 <wire x1="168.91" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="165.1" y1="76.2" x2="165.1" y2="90.17" width="0.1524" layer="91" grouprefs="GROVE"/>
 <label x="171.45" y="92.71" size="1.778" layer="95" xref="yes" grouprefs="GROVE"/>
@@ -12811,7 +12810,7 @@ Alex Minser</text>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="1"/>
+<pinref part="GROVE2" gate="G$1" pin="1"/>
 <wire x1="168.91" y1="78.74" x2="168.91" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
 <wire x1="168.91" y1="86.36" x2="173.99" y2="86.36" width="0.1524" layer="91" grouprefs="GROVE"/>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -12885,7 +12884,7 @@ Alex Minser</text>
 <junction x="125.73" y="96.52"/>
 </segment>
 <segment>
-<pinref part="J4[GROVE]" gate="G$1" pin="3"/>
+<pinref part="GROVE2" gate="G$1" pin="3"/>
 <wire x1="168.91" y1="73.66" x2="161.29" y2="73.66" width="0.1524" layer="91" grouprefs="GROVE"/>
 <label x="161.29" y="100.33" size="1.778" layer="95" xref="yes" grouprefs="GROVE"/>
 <wire x1="161.29" y1="73.66" x2="161.29" y2="96.52" width="0.1524" layer="91"/>
