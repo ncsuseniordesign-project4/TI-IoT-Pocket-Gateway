@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-09-14T12:53:57Z",
+        "CreationDate": "2020-10-19T16:29:40Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -17,8 +17,8 @@
         },
         "Owner": "Arthur Brazzle <acbrazzl@ncsu.edu>",
         "Size": {
-            "X": 108.1622,
-            "Y": 35.0254
+            "X": 111.8706,
+            "Y": 35.1524
         }
     }
 }
