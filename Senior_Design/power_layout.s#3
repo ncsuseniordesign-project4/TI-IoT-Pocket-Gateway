@@ -10888,7 +10888,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <class number="0" name="default" width="0.1524" drill="0.1524">
 <clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="POWER" width="0.254" drill="0.1524">
+<class number="1" name="POWER" width="0.1524" drill="0.1524">
 <clearance class="1" value="0.1524"/>
 </class>
 </classes>
@@ -11544,7 +11544,7 @@ Alex Minser</text>
 <pinref part="CR2" gate="A" pin="I/O2"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="104.14" y1="-31.75" x2="106.68" y2="-31.75" width="0.1524" layer="91" grouprefs="SIM7000"/>
@@ -12651,7 +12651,7 @@ Alex Minser</text>
 <label x="71.12" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="X_4" gate="G$1" pin="0"/>
