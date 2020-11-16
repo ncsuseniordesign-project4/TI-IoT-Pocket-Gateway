@@ -1,7 +1,7 @@
 {
-  "name": "ti-iot-pocket-gateway-485-alpha-demo",
+  "name": "ti-iot-pocket-gateway-final-demo",
   "version": "1.0.0",
-  "description": "ECE 485 Alpha Demo",
+  "description": "pocket beagle gateway node script",
   "main": "brokerToCloud.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

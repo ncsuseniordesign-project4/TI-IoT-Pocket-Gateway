@@ -1,0 +1,18 @@
+{
+  "name": "ti-iot-pocket-gateway-final-demo",
+  "version": "1.0.0",
+  "description": "pH sensor simulation",
+  "main": "pH_Sensor.js",
+  "dependencies": {
+    "@serialport/parser-inter-byte-timeout": "^9.0.1",
+    "delay": "^4.4.0",
+    "serialport": "^9.0.2",
+    "xbee-api": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ncsuseniordesign-project4",
+  "license": "MIT"
+}
