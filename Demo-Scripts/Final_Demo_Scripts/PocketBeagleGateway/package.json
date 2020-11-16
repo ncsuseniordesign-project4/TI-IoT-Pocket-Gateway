@@ -1,0 +1,28 @@
+{
+  "name": "ti-iot-pocket-gateway-485-alpha-demo",
+  "version": "1.0.0",
+  "description": "ECE 485 Alpha Demo",
+  "main": "brokerToCloud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway.git"
+  },
+  "author": "ncsuseniordesign-project4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway/issues"
+  },
+  "homepage": "https://github.com/ncsuseniordesign-project4/TI-IoT-Pocket-Gateway#readme",
+  "dependencies": {
+    "@serialport/parser-inter-byte-timeout": "^9.0.1",
+    "azure-iot-device": "^1.17.2",
+    "azure-iot-device-mqtt": "^1.15.2",
+    "mqtt": "^4.2.1",
+    "npm": "^6.14.8",
+    "serialport": "^9.0.2",
+    "xbee-api": "^0.6.0"
+  }
+}
