@@ -1,0 +1,94 @@
+﻿@page "/"
+
+<h2>Remote Device Control</h2>
+<hr />
+
+<p>
+    This page allows for interacting with remote devices using the Azure IoT Hub.
+</p>
+<hr />
+
+<h4>IoT Hub Configuration</h4>
+<EditForm Model="@_clientInfo" OnValidSubmit="@HandleValidClientSubmitAsync">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <label for="connectionString">Connection String:</label>
+                </th>
+                <td>
+                    <InputText id="connectionString" @bind-Value="_clientInfo.ConnectionString" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="eventHubName">Event Hub Name:</label>
+                </th>
+                <td>
+                    <InputText id="eventHubName" @bind-Value="_clientInfo.EventHubName" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="eventHubConnectionString">Event Hub Endpoint:</label>
+                </th>
+                <td>
+                    <InputText id="eventHubConnectionString" @bind-Value="_clientInfo.EventHubConnectionString" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="submit">Submit</button>
+    <button type="reset" @onclick="ClearClientForm">Clear</button>
+</EditForm>
+
+<hr />
+
+<h4>Predefined Demo Actions</h4>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Water Pump:</th>
+            <td>
+                <button @onclick="EnableWaterPumpAsync">Enable</button>
+            </td>
+            <td>
+                <button @onclick="DisableWaterPumpAsync">Disable</button>
+            </td>
+        </tr>
+        <tr>
+            <th>Water pH:</th>
+            <td>
+                <button @onclick="ReadpHAsync">Read</button>
+            </td>
+            <td>
+                <label>@_currentpHValue</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Soil Temperature:</th>
+            <td>
+                <button @onclick="EnableTemperatureStreamAsync">Start Stream</button>
+            </td>
+            <td>
+                <button @onclick="DisableTemperatureStreamAsync">Stop Stream</button>
+            </td>
+        </tr>
+        <tr>
+            <th><label>Latest Temperature:</label></th>
+            <td colspan="2">
+                <label>@_currentValue</label>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<h4>Activity Log</h4>
+@((MarkupString)_statusMsg)
