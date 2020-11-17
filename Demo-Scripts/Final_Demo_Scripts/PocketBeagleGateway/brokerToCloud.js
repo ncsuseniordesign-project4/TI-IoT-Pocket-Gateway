@@ -5,7 +5,7 @@ var mqtt = require('mqtt')
 var localClient  = mqtt.connect('mqtt://localhost:1883')
 
 // XBee Stuff
-var receiverMacAddr = "0013A20040B7A99A";
+var receiverMacAddr = ""; // mac addr of the xbee module to which the message need to be sent
 const InterByteTimeout = require('@serialport/parser-inter-byte-timeout');
 var xbee_api = require('xbee-api');
 var C = xbee_api.constants;
@@ -61,7 +61,7 @@ parser.on('data', function (data) {
 
 
 // Connection String of IoT Device in the Azure IoT Hub
-var connectionString = 'HostName=sdFinalDemo.azure-devices.net;DeviceId=pocketBeagleGateway;SharedAccessKey=r8Ac2c5pKeq93Ei7rA0VzWcHKZRVyMoN3mYzaG+kQds=';
+var connectionString = '';	// Use the primary connection string of the iot device created under iot hub
 
 // Azure IoT Device Objects
 var Mqtt = require('azure-iot-device-mqtt').Mqtt;
